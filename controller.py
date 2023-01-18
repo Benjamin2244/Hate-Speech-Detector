@@ -1,7 +1,7 @@
 from InputParser import InputParser
 
 
-class Introduction:
+class Controller:
     def __init__(self):
         input_parser = InputParser()
         text = input_parser.getText()
@@ -11,4 +11,4 @@ class Introduction:
     def print_intro(self):
         print('This is the introduction page.')
 
-Introduction()
+Controller()
