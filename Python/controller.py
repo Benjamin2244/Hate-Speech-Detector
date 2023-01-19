@@ -1,11 +1,12 @@
 from InputParser import InputParser
+from TextReader import TextReader
 
 
 class Controller:
     def __init__(self):
         input_parser = InputParser()
-        text = input_parser.getText()
-        print(text)
+        txt_reader = TextReader()
+        txt_reader.create_clean_swn()
         self.print_intro()
 
     def print_intro(self):
