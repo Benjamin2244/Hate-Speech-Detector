@@ -136,3 +136,21 @@ class TextReader:
                     continue
                 clean_file.writelines(clean_row + '\n')
         clean_file.close()
+
+    def get_overall_score(self, text):
+        pointer = 0
+        while pointer < len(text):
+            if text[pointer] == '.' or text[pointer] == '-' or text[pointer].isnumeric() or text[pointer].isspace():
+                pass
+            else:
+                return text[:pointer]
+            pointer += 1
+
+    def get_value(self, word):
+        value = 0
+        text = self.read_file(self.get_path('CleanSentiWordNet_3.0.0.txt'))
+        for row in text:
+            if word in row:
+                value += float(self.get_overall_score(row))
+        print(value)
+        return value
