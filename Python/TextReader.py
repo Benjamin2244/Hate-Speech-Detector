@@ -32,15 +32,77 @@ class TextReader:
             pointer += 1
         return text
 
-    def get_pos(self, text):
+    def get_values(self, text):
         pointer = 0
-        if text[pointer] == ' ':
+        while pointer < len(text):
+            if text[pointer] == '.' or text[pointer].isnumeric() or text[pointer].isspace():
+                pass
+            else:
+                return text[:pointer-1]
+            pointer += 1
+        return 0
+
+    def get_non_values(self, text):
+        pointer = 0
+        while pointer < len(text):
+            if text[pointer] == '.' or text[pointer].isnumeric() or text[pointer].isspace():
+                pass
+            else:
+                return text[pointer:]
+            pointer += 1
+        return 0
+
+    def get_pos(self, text):
+        count = 0
+        try:
+            for c in text:
+                if c == '.':
+                    count += 1
+        except:
             return 0
+        if count == 0:
+            return text[0]
+        elif count == 1:
+            first = text.index('.')
+            if first > 1:
+                return text[0]
+            else:
+                return text[:len(text)-2]
+        else:
+            first = text.index('.')
+            second = text.index('.', first+1)
+            return text[:second-2]
+
+    def get_neg(self, text):
+        count = 0
+        try:
+            for c in text:
+                if c == '.':
+                    count += 1
+        except:
+            return 0
+        if count == 0:
+            return text[len(text)-1]
+        elif count == 1:
+            first = text.index('.')
+            if first == 1:
+                return text[len(text)-1]
+            else:
+                return text[first-1:]
+        else:
+            first = text.index('.')
+            second = text.index('.', first+1)
+            return text[second-1:]
 
     def remove_neutral(self, text):
-        # if self.get_pos(text) - self.get_neg(text) == 0:
-        #     return ''
-        return text
+        values = self.get_values(text)
+        non_values = self.get_non_values(text)
+        pos = self.get_pos(values)
+        neg = self.get_neg(values)
+        overall = float(pos) - float(neg)
+        if overall == 0:
+            return ''
+        return str(overall) + ' ' + non_values
 
     def clean_swn_row(self, row):
         pointer = len(row) - 1
@@ -70,5 +132,7 @@ class TextReader:
         for row in text:
             if row[0] != '#':
                 clean_row = self.clean_swn_row(row)
+                if len(clean_row) == 0:
+                    continue
                 clean_file.writelines(clean_row + '\n')
         clean_file.close()
