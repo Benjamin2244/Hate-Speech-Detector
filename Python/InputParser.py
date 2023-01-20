@@ -11,11 +11,22 @@ class InputParser:
             word += text[i]
         return word
 
-    def get_text(self):
+    def remove_non_letters(self, dirty_text):
+        clean_text = ''
+        for c in dirty_text:
+            if c.isalpha() or c == ' ':
+                clean_text += c
+        return clean_text
+
+    def to_lowercase(self, text):
+        return text.lower()
+
+    def get_clean_text(self, dirty_text):
         clean_text = []
-        dirty_text = self.read_input()
         front = 0
         back = 0
+        dirty_text = self.remove_non_letters(dirty_text)
+        dirty_text = self.to_lowercase(dirty_text)
         for c in dirty_text:
             if c == ' ':
                 word = self.get_word(dirty_text, front, back)

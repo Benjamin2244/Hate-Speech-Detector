@@ -146,11 +146,48 @@ class TextReader:
                 return text[:pointer]
             pointer += 1
 
-    def get_value(self, word):
+    def get_word_value(self, word):
         value = 0
+        appearances = 0
         text = self.read_file(self.get_path('CleanSentiWordNet_3.0.0.txt'))
         for row in text:
-            if word in row:
+            words = row.split()
+            if word in words:
+                appearances += 1
                 value += float(self.get_overall_score(row))
-        print(value)
+        if appearances > 0:
+            value = value / appearances
+        # print(word + ' : ' + str(value))
         return value
+
+    def get_word_valuev2(self, word):
+        value = 0
+        appearances = 0
+        text = self.read_file(self.get_path('CleanSentiWordNet_3.0.0.txt'))
+        for row in text:
+            words = row.split()
+            if word in words:
+                appearances += 1
+                value += float(self.get_overall_score(row))
+        # if appearances > 0:
+        #     value = value / appearances
+        # print(word + ' : ' + str(value))
+        return value
+
+    def get_text_value(self, words):
+        score = 0
+        for word in words:
+            score += self.get_word_value(word)
+        return score
+
+    def get_text_valuev2(self, words):
+        score = 0
+        count = 0
+        for word in words:
+            word_score = self.get_word_valuev2(word)
+            score += word_score
+            if word_score != 0:
+                count += 1
+        if count == 0:
+            return score
+        return score / count
