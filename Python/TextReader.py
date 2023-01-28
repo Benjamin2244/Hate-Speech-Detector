@@ -161,18 +161,18 @@ class TextReader:
         return value
 
     def get_word_valuev2(self, word):
-        value = 0
+        values = []
         appearances = 0
         text = self.read_file(self.get_path('CleanSentiWordNet_3.0.0.txt'))
         for row in text:
             words = row.split()
             if word in words:
                 appearances += 1
-                value += float(self.get_overall_score(row))
+                values.append(float(self.get_overall_score(row)))
         # if appearances > 0:
         #     value = value / appearances
         # print(word + ' : ' + str(value))
-        return value
+        return values
 
     def get_text_value(self, words):
         score = 0
@@ -184,10 +184,12 @@ class TextReader:
         score = 0
         count = 0
         for word in words:
-            word_score = self.get_word_valuev2(word)
-            score += word_score
-            if word_score != 0:
-                count += 1
+            scores = self.get_word_valuev2(word)
+            print (word)
+            print (scores)
+            for value in scores:
+                score += value
+            count += len(scores)
         if count == 0:
             return score
         return score / count

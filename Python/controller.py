@@ -14,6 +14,7 @@ class Controller:
                      'iPhone of Samsung - http://t co/501s9dBS3m',
                      'Pregnancy week to week: Pregnancy week to weekCategory: Released: 2013-04-10 04:35:01Price: 0 http://t co/KITPmwmbM9 - iPhone App'
                      ]
+        list_text = ['iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
         for text in list_text:
             print(text)
             text = input_parser.get_clean_text(text)
