@@ -9,8 +9,6 @@ class Controller:
         self.txt_parser = TextFileParser()
         self.csv_parser = CSVParser()
         self.THRESHOLD = 0.15
-        self.POSITIVE_EMOJIS = [':)',':-)', ': )', ':D', '=)', ':-D', 'o:)-', '8-)', ':$']
-        self.NEGATIVE_EMOJIS = [':(', ':-(', ': (', ":'(", ':o', '>(', '(@)', 'X|']
         list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
                      'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night',
                      'I came home from practice and my mommy brought me Chipotle :-) :-) :-) :-) she so gr8',
@@ -20,14 +18,13 @@ class Controller:
                      'Pregnancy week to week: Pregnancy week to weekCategory: Released: 2013-04-10 04:35:01Price: 0 http://t co/KITPmwmbM9 - iPhone App'
                      ]
 
-        list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
-                     'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
+        # list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
+        #              'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
         self.print_intro()
         for text in list_text:
             print(text)
-            text = self.input_parser.get_clean_text(text)
-            print(self.txt_parser.get_text_value(text))
-            print(self.txt_parser.get_text_valuev2(text))
+            # print(self.txt_parser.get_text_value(text))
+            # print(self.txt_parser.get_text_valuev2(text))
             print(self.get_text_score(text))
 
     def createSWNcsv(self):
@@ -55,6 +52,8 @@ class Controller:
         return newValues
 
     def get_text_score(self, text):
+        emojis = self.input_parser.getEmojis(text)
+        text = self.input_parser.get_clean_text(text)
         allValues = []
         for word in text:
             values = self.csv_parser.get_values(word)
@@ -63,6 +62,11 @@ class Controller:
                 continue
             allValues.append(average)
         allValues = self.getAbsoluteValues(allValues)
+        for emoji in emojis:
+            if emoji == '+':
+                allValues.append(1)
+            elif emoji == '-':
+                allValues.append(-1)
         average = self.getAverageValue(allValues)
         print(allValues)
         return average

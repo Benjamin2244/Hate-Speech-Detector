@@ -1,6 +1,8 @@
 class InputParser:
     def __init__(self):
         print('Created input parser')
+        self.POSITIVE_EMOJIS = [':)', ':-)', ': )', ':D', '=)', ':-D', 'o:)-', '8-)', ':$']
+        self.NEGATIVE_EMOJIS = [':(', ':-(', ': (', ":'(", ':o', '>(', '(@)', 'X|']
 
     def read_input(self):
         return 'Input: ABC'
@@ -37,5 +39,17 @@ class InputParser:
                 continue
             back += 1
             front = back
+            if word == '':
+                continue
             clean_text.append(word)
         return clean_text
+
+    def getEmojis(self, text):
+        emojis = []
+        for emoji in self.POSITIVE_EMOJIS:
+            if emoji in text:
+                emojis.append('+')
+        for emoji in self.NEGATIVE_EMOJIS:
+            if emoji in text:
+                emojis.append('-')
+        return emojis
