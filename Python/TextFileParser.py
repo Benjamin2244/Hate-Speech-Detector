@@ -1,8 +1,9 @@
 import os
 
-class TextReader:
+
+class TextFileParser:
     def __init__(self):
-        print('Created text reader')
+        print('Created text file parser')
         parent_dir = os.path.dirname(os.path.abspath(__file__))
         self.project_dir = os.path.dirname(parent_dir)
 
@@ -25,7 +26,7 @@ class TextReader:
         while pointer < len(text):
             if on_id:
                 if not text[pointer].isnumeric():
-                    return text[pointer+1:]
+                    return text[pointer + 1:]
             else:
                 if text[pointer].isnumeric():
                     on_id = True
@@ -38,7 +39,7 @@ class TextReader:
             if text[pointer] == '.' or text[pointer].isnumeric() or text[pointer].isspace():
                 pass
             else:
-                return text[:pointer-1]
+                return text[:pointer - 1]
             pointer += 1
         return 0
 
@@ -67,11 +68,11 @@ class TextReader:
             if first > 1:
                 return text[0]
             else:
-                return text[:len(text)-2]
+                return text[:len(text) - 2]
         else:
             first = text.index('.')
-            second = text.index('.', first+1)
-            return text[:second-2]
+            second = text.index('.', first + 1)
+            return text[:second - 2]
 
     def get_neg(self, text):
         count = 0
@@ -82,17 +83,17 @@ class TextReader:
         except:
             return 0
         if count == 0:
-            return text[len(text)-1]
+            return text[len(text) - 1]
         elif count == 1:
             first = text.index('.')
             if first == 1:
-                return text[len(text)-1]
+                return text[len(text) - 1]
             else:
-                return text[first-1:]
+                return text[first - 1:]
         else:
             first = text.index('.')
-            second = text.index('.', first+1)
-            return text[second-1:]
+            second = text.index('.', first + 1)
+            return text[second - 1:]
 
     def remove_neutral(self, text):
         values = self.get_values(text)
@@ -112,11 +113,11 @@ class TextReader:
                 clean_row = row[:pointer + 2]
                 break
             pointer -= 1
-        pointer = len(clean_row)-1
+        pointer = len(clean_row) - 1
         while pointer >= 0:
             c = clean_row[pointer]
             if c == '#':
-                clean_row = clean_row[:pointer] + clean_row[pointer+2:]
+                clean_row = clean_row[:pointer] + clean_row[pointer + 2:]
             pointer -= 1
         clean_row = self.remove_pos(clean_row)
         clean_row = self.remove_id(clean_row)
@@ -185,11 +186,20 @@ class TextReader:
         count = 0
         for word in words:
             scores = self.get_word_valuev2(word)
-            print (word)
-            print (scores)
+            # print (word)
+            # print (scores)
             for value in scores:
                 score += value
             count += len(scores)
         if count == 0:
             return score
         return score / count
+
+    def getAll(self):
+        allData = []
+        swn = self.get_path('CleanSentiWordNet_3.0.0.txt')
+        text = self.read_file(swn)
+        for row in text:
+            allData.append(row.split())
+        return allData
+
