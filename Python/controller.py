@@ -26,20 +26,16 @@ class Controller:
 
         # list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
         #              'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
-        self.print_intro()
         for text in list_text:
             print(text)
-            # print(self.txt_parser.get_text_value(text))
-            # print(self.txt_parser.get_text_valuev2(text))
             print(self.get_text_score(text))
 
+    # Create 'SentiWordNet_3.0.0.csv'.
     def createSWNcsv(self):
         allData = self.txt_parser.getAll()
         self.csv_parser.create_csv_swn(allData)
 
-    def print_intro(self):
-        print('This is the introduction page.')
-
+    # Returns the average value from the values.
     def getAverageValue(self, values):
         if len(values) == 0:
             return 0
@@ -48,6 +44,7 @@ class Controller:
             total += float(value)
         return total / len(values)
 
+    # Returns the list of values '1' or '-1' corresponding to the given values that reach the threshold past neural.
     def getAbsoluteValues(self, values):
         newValues = []
         for value in values:
@@ -57,15 +54,18 @@ class Controller:
                 newValues.append(-1)
         return newValues
 
+    # Downloads wordnet.
     def download_wordnet(self):
         try:
             nltk.data.find('corpora/wordnet')
         except LookupError:
             nltk.download('wordnet')
 
+    # Downloads all the resources needed.
     def downloads(self):
         self.download_wordnet()
 
+    # Changes the HAS_INTERNET variable depending on the internet connection.
     def check_for_internet_connection(self):
         urls = ["https://www.google.co.uk",
                 "https://www.amazon.co.uk",
@@ -79,7 +79,9 @@ class Controller:
             if status_code == 200:
                 self.HAS_INTERNET = True
                 return
+            self.HAS_INTERNET = False
 
+    # Returns the synonyms for the word.
     def get_thesaurus_words(self, word):
         similar_words = []
         for synset in wordnet.synsets(word):
@@ -87,6 +89,7 @@ class Controller:
                 similar_words.append(lemma.name())
         return similar_words
 
+    # Returns the average value for the synonym's of the word.
     def get_backup_average(self, word):
         similar_words = self.get_thesaurus_words(word)
         values = []
@@ -94,6 +97,8 @@ class Controller:
             values += self.csv_parser.get_values(similar_word)
         average = self.getAverageValue(values)
         return average
+
+    # Returns the overall score for the text.
     def get_text_score(self, text):
         emojis = self.input_parser.getEmojis(text)
         text = self.input_parser.get_clean_text(text)

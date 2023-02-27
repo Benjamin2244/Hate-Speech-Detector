@@ -1,18 +1,16 @@
 class InputParser:
     def __init__(self):
-        print('Created input parser')
         self.POSITIVE_EMOJIS = [':)', ':-)', ': )', ':D', '=)', ':-D', 'o:)-', '8-)', ':$']
         self.NEGATIVE_EMOJIS = [':(', ':-(', ': (', ":'(", ':o', '>(', '(@)', 'X|']
 
-    def read_input(self):
-        return 'Input: ABC'
-
+    # Returns the word between the two indexes.
     def get_word(self, text, front, back):
         word = ''
         for i in range(front, back):
             word += text[i]
         return word
 
+    # Remove all the non letters in the text.
     def remove_non_letters(self, dirty_text):
         clean_text = ''
         for c in dirty_text:
@@ -20,9 +18,11 @@ class InputParser:
                 clean_text += c
         return clean_text
 
+    # Returns text as lowercase.
     def to_lowercase(self, text):
         return text.lower()
 
+    # Returns clean version of text.
     def get_clean_text(self, dirty_text):
         clean_text = []
         front = 0
@@ -44,6 +44,7 @@ class InputParser:
             clean_text.append(word)
         return clean_text
 
+    # Returns a list of '+' and '-' that indicates the positive and negative emojis within the text.
     def getEmojis(self, text):
         emojis = []
         for emoji in self.POSITIVE_EMOJIS:

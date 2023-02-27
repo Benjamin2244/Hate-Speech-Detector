@@ -3,23 +3,25 @@ import os
 
 class TextFileParser:
     def __init__(self):
-        print('Created text file parser')
         parent_dir = os.path.dirname(os.path.abspath(__file__))
         self.project_dir = os.path.dirname(parent_dir)
 
+    # Returns the content of a given file.
     def read_file(self, file_loc):
         file = open(file_loc, 'r')
         text = file.readlines()
         file.close()
         return text
 
+    # Returns the path of the file with the name in the directory 'SentiWordNet_3.0.0'.
     def get_path(self, name):
-        # return os.path.join(self.project_dir, '...', name)
         return os.path.join(self.project_dir, 'SentiWordNet_3.0.0', name)
 
+    # Remove the POS column from the text.
     def remove_pos(self, text):
         return text[2:]
 
+    # Remove the ID column from the text.
     def remove_id(self, text):
         pointer = 0
         on_id = False
@@ -33,6 +35,7 @@ class TextFileParser:
             pointer += 1
         return text
 
+    # Returns the values in the text.
     def get_values(self, text):
         pointer = 0
         while pointer < len(text):
@@ -43,6 +46,7 @@ class TextFileParser:
             pointer += 1
         return 0
 
+    # Returns the text that is located past the values in the text.
     def get_non_values(self, text):
         pointer = 0
         while pointer < len(text):
@@ -53,7 +57,8 @@ class TextFileParser:
             pointer += 1
         return 0
 
-    def get_pos(self, text):
+    # Returns the positive value from the text.
+    def get_positive(self, text):
         count = 0
         try:
             for c in text:
@@ -74,7 +79,8 @@ class TextFileParser:
             second = text.index('.', first + 1)
             return text[:second - 2]
 
-    def get_neg(self, text):
+    # Returns the negative value from the text.
+    def get_negative(self, text):
         count = 0
         try:
             for c in text:
@@ -95,16 +101,18 @@ class TextFileParser:
             second = text.index('.', first + 1)
             return text[second - 1:]
 
+    # Remove the row if the positive and negative values are the same.
     def remove_neutral(self, text):
         values = self.get_values(text)
         non_values = self.get_non_values(text)
-        pos = self.get_pos(values)
-        neg = self.get_neg(values)
+        pos = self.get_positive(values)
+        neg = self.get_negative(values)
         overall = float(pos) - float(neg)
         if overall == 0:
             return ''
         return str(overall) + ' ' + non_values
 
+    # Clean the SentiWordNet row.
     def clean_swn_row(self, row):
         pointer = len(row) - 1
         clean_row = ''
@@ -124,6 +132,7 @@ class TextFileParser:
         clean_row = self.remove_neutral(clean_row)
         return clean_row
 
+    # Clean the 'SentiWordNet_3.0.0.txt' and write the changes into 'CleanSentiWordNet_3.0.0.txt'.
     def create_clean_swn(self):
         original = self.get_path('SentiWordNet_3.0.0.txt')
         clean = self.get_path('CleanSentiWordNet_3.0.0.txt')
@@ -138,63 +147,7 @@ class TextFileParser:
                 clean_file.writelines(clean_row + '\n')
         clean_file.close()
 
-    def get_overall_score(self, text):
-        pointer = 0
-        while pointer < len(text):
-            if text[pointer] == '.' or text[pointer] == '-' or text[pointer].isnumeric() or text[pointer].isspace():
-                pass
-            else:
-                return text[:pointer]
-            pointer += 1
-
-    def get_word_value(self, word):
-        value = 0
-        appearances = 0
-        text = self.read_file(self.get_path('CleanSentiWordNet_3.0.0.txt'))
-        for row in text:
-            words = row.split()
-            if word in words:
-                appearances += 1
-                value += float(self.get_overall_score(row))
-        if appearances > 0:
-            value = value / appearances
-        # print(word + ' : ' + str(value))
-        return value
-
-    def get_word_valuev2(self, word):
-        values = []
-        appearances = 0
-        text = self.read_file(self.get_path('CleanSentiWordNet_3.0.0.txt'))
-        for row in text:
-            words = row.split()
-            if word in words:
-                appearances += 1
-                values.append(float(self.get_overall_score(row)))
-        # if appearances > 0:
-        #     value = value / appearances
-        # print(word + ' : ' + str(value))
-        return values
-
-    def get_text_value(self, words):
-        score = 0
-        for word in words:
-            score += self.get_word_value(word)
-        return score
-
-    def get_text_valuev2(self, words):
-        score = 0
-        count = 0
-        for word in words:
-            scores = self.get_word_valuev2(word)
-            # print (word)
-            # print (scores)
-            for value in scores:
-                score += value
-            count += len(scores)
-        if count == 0:
-            return score
-        return score / count
-
+    # Returns all the data in 'CleanSentiWordNet_3.0.0.txt' as a list of Strings.
     def getAll(self):
         allData = []
         swn = self.get_path('CleanSentiWordNet_3.0.0.txt')
