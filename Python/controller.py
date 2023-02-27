@@ -1,7 +1,9 @@
 from InputParser import InputParser
 from TextFileParser import TextFileParser
 from CSVParser import CSVParser
-
+from nltk.corpus import wordnet
+import nltk
+import requests
 
 class Controller:
     def __init__(self):
@@ -9,6 +11,10 @@ class Controller:
         self.txt_parser = TextFileParser()
         self.csv_parser = CSVParser()
         self.THRESHOLD = 0.15
+        self.HAS_INTERNET = False
+        self.check_for_internet_connection()
+        if self.HAS_INTERNET:
+            self.downloads()
         list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
                      'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night',
                      'I came home from practice and my mommy brought me Chipotle :-) :-) :-) :-) she so gr8',
@@ -18,8 +24,8 @@ class Controller:
                      'Pregnancy week to week: Pregnancy week to weekCategory: Released: 2013-04-10 04:35:01Price: 0 http://t co/KITPmwmbM9 - iPhone App'
                      ]
 
-        # list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
-        #              'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
+        list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
+                     'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
         self.print_intro()
         for text in list_text:
             print(text)
@@ -51,6 +57,45 @@ class Controller:
                 newValues.append(-1)
         return newValues
 
+    def download_wordnet(self):
+        try:
+            nltk.data.find('corpora/wordnet')
+            print('found it')
+        except LookupError:
+            nltk.download('wordnet')
+            print('not found it')
+
+    def downloads(self):
+        self.download_wordnet()
+
+    def check_for_internet_connection(self):
+        urls = ["https://www.google.co.uk",
+                "https://www.amazon.co.uk",
+                "https://www.microsoft.com"]
+        for url in urls:
+            try:
+                response = requests.get(url)
+                status_code = response.status_code
+            except(Exception):
+                continue
+            if status_code == 200:
+                self.HAS_INTERNET = True
+                return
+
+    def get_thesaurus_words(self, word):
+        similar_words = []
+        for synset in wordnet.synsets(word):
+            for lemma in synset.lemmas():
+                similar_words.append(lemma.name())
+        return similar_words
+
+    def get_backup_average(self, word):
+        similar_words = self.get_thesaurus_words(word)
+        values = []
+        for similar_word in similar_words:
+            values += self.csv_parser.get_values(similar_word)
+        average = self.getAverageValue(values)
+        return average
     def get_text_score(self, text):
         emojis = self.input_parser.getEmojis(text)
         text = self.input_parser.get_clean_text(text)
@@ -59,7 +104,9 @@ class Controller:
             values = self.csv_parser.get_values(word)
             average = self.getAverageValue(values)
             if average == 0:
-                continue
+                average = self.get_backup_average(word)
+                if average == 0:
+                    continue
             allValues.append(average)
         allValues = self.getAbsoluteValues(allValues)
         for emoji in emojis:
@@ -68,7 +115,7 @@ class Controller:
             elif emoji == '-':
                 allValues.append(-1)
         average = self.getAverageValue(allValues)
-        print(allValues)
+        print(len(allValues))
         return average
 
 Controller()
