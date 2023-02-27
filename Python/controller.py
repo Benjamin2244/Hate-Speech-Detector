@@ -24,8 +24,8 @@ class Controller:
                      'Pregnancy week to week: Pregnancy week to weekCategory: Released: 2013-04-10 04:35:01Price: 0 http://t co/KITPmwmbM9 - iPhone App'
                      ]
 
-        list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
-                     'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
+        # list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
+        #              'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
         self.print_intro()
         for text in list_text:
             print(text)
@@ -60,10 +60,8 @@ class Controller:
     def download_wordnet(self):
         try:
             nltk.data.find('corpora/wordnet')
-            print('found it')
         except LookupError:
             nltk.download('wordnet')
-            print('not found it')
 
     def downloads(self):
         self.download_wordnet()
@@ -115,7 +113,6 @@ class Controller:
             elif emoji == '-':
                 allValues.append(-1)
         average = self.getAverageValue(allValues)
-        print(len(allValues))
         return average
 
 Controller()
