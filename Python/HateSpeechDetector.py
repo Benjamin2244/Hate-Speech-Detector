@@ -20,7 +20,7 @@ class HateSpeechDetector:
         try:
             nltk.data.find('corpora/wordnet')
         except LookupError:
-            nltk.download('wordnet')
+            nltk.download('wordnet', quiet=True)
 
     # Downloads all the resources needed.
     def downloads(self):
@@ -79,23 +79,25 @@ class HateSpeechDetector:
         return average
 
     # Returns the overall score for the text.
-    def get_text_score(self, text):
-        emojis = self.input_parser.getEmojis(text)
-        text = self.input_parser.get_clean_text(text)
+    def get_text_score(self, text, emojis):
         allValues = []
         for word in text:
             values = self.csv_parser.get_values(word)
             average = self.getAverageValue(values)
-            if average == 0:
+            if average == 0 and len(values) != 0: # Improve performance by only getting the backup values for words that had a value but they were too neutral.
                 average = self.get_backup_average(word)
                 if average == 0:
                     continue
             allValues.append(average)
         allValues = self.getAbsoluteValues(allValues)
+        allValues = self.addEmojiScore(allValues, emojis)
+        average = self.getAverageValue(allValues)
+        return average
+
+    def addEmojiScore(self, allValues, emojis):
         for emoji in emojis:
             if emoji == '+':
                 allValues.append(1)
             elif emoji == '-':
                 allValues.append(-1)
-        average = self.getAverageValue(allValues)
-        return average
+        return allValues

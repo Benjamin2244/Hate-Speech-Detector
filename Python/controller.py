@@ -2,6 +2,7 @@ from InputParser import InputParser
 from TextFileParser import TextFileParser
 from CSVParser import CSVParser
 from HateSpeechDetector import HateSpeechDetector
+from LGBTQIADetector import LGBTQIADetector
 from nltk.corpus import wordnet
 import nltk
 import requests
@@ -12,6 +13,7 @@ class Controller:
         self.txt_parser = TextFileParser()
         self.csv_parser = CSVParser()
         self.hate_speech_detector = HateSpeechDetector()
+        self.LGBTQIA_detector = LGBTQIADetector()
         list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
                      'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night',
                      'I came home from practice and my mommy brought me Chipotle :-) :-) :-) :-) she so gr8',
@@ -21,11 +23,14 @@ class Controller:
                      'Pregnancy week to week: Pregnancy week to weekCategory: Released: 2013-04-10 04:35:01Price: 0 http://t co/KITPmwmbM9 - iPhone App'
                      ]
 
-        list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
-                     'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night']
+        # list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
+        #              'iPhone batteries are actually so fucking shitty Been without a BI phone all day &amp; night']
         for text in list_text:
             print(text)
-            print(self.hate_speech_detector.get_text_score(text))
+            emojis = self.input_parser.getEmojis(text)
+            clean_text = self.input_parser.get_clean_text(text)
+            print(self.hate_speech_detector.get_text_score(clean_text, emojis))
+            print(self.LGBTQIA_detector.isTextRelated(clean_text))
 
 
 Controller()
