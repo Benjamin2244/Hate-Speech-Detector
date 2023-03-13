@@ -105,7 +105,6 @@ class TestData:
         csv_file.truncate(0)
         writer = csv.writer(csv_file)
         rows = self.cleanSentiment140Results()
-        print(rows[444][5])
         for row in rows:
             if len(row) > 0:
                 text = row[5]

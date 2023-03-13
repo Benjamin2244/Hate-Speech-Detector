@@ -47,7 +47,8 @@ class Interface:
         self.controller.resetResults()
 
 intereface = Interface()
-intereface.resetTestResults()
-# intereface.calcTestResults(50)
+# intereface.resetTestResults()
+# intereface.calcTestResults(3)
+intereface.controller.calcNonHateSpeechResults(15)
 # intereface.getTestResults()
 # intereface.controller.testData.create_clean_sentiment140()

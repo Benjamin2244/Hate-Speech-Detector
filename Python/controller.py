@@ -100,6 +100,44 @@ class Controller:
         if len(targets) > 0:
             self.testData.addResults(targets, results, indexes)
 
+    def calcNonHateSpeechResults(self, num):
+        targets = []
+        results = []
+        indexes = []
+        testData = self.testData.getTestData()
+
+        totalCount = 0
+        testResults = self.testData.getResults()
+        for result in testResults:
+            if len(result) > 0:
+                if result[1] == '-' or result[2] == '-':
+                    break
+                totalCount += 1
+        count = 0
+        index = 0
+        progress = 0
+        min = totalCount
+        max = totalCount + num
+        for data in testData:
+            if data[1] == 'non_hatespeech':
+                if count >= min and count < max:
+                    self.newText(data[0])
+                    result = self.getTestResult()
+                    targets.append(data[1])
+                    results.append(result)
+                    indexes.append(index)
+                    progress += 1
+                    if progress < 250:
+                        if progress % 10 == 0:
+                            print(progress)
+                    else:
+                        if progress % 50 == 0:
+                            print(progress)
+                count += 1
+            index += 1
+        if len(targets) > 0:
+            self.testData.addResults(targets, results, indexes)
+
     def getCorrectLGBTTestResults(self):
         correctCount = 0
         semiCorrectCount = 0
