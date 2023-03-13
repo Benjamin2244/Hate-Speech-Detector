@@ -3,6 +3,7 @@ from TextFileParser import TextFileParser
 from CSVParser import CSVParser
 from HateSpeechDetector import HateSpeechDetector
 from LGBTQIADetector import LGBTQIADetector
+from Python.TestData import TestData
 from nltk.corpus import wordnet
 import nltk
 import requests
@@ -14,23 +15,114 @@ class Controller:
         self.csv_parser = CSVParser()
         self.hate_speech_detector = HateSpeechDetector()
         self.LGBTQIA_detector = LGBTQIADetector()
-        list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
-                     'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night',
-                     'I came home from practice and my mommy brought me Chipotle :-) :-) :-) :-) she so gr8',
-                     'Your eyes is colorfull like #WarnaWarniGalaxy, that is why I falling in love with you :) :) cc. @Samsung_ID',
-                     'Chale :( jodido iOS 7 en México #iOS7 #ios7mexico #fail #iphone4mexico',
-                     'iPhone of Samsung - http://t co/501s9dBS3m',
-                     'Pregnancy week to week: Pregnancy week to weekCategory: Released: 2013-04-10 04:35:01Price: 0 http://t co/KITPmwmbM9 - iPhone App'
-                     ]
+        self.testData = TestData()
+        self.text = ''
+        self.cleanText = []
+        self.emojis = []
+        self.isHateSpeechDetector = True
+        self.isLGBTQIASpeechDetector = True
+        self.testResults = []
 
-        # list_text = ['@bellathorne If I see a picture on my iPhone that says Bella follows you will get a big smile on my lip :)',
-        #              'iPhone batteries are actually so fucking shitty Been without a BI phone all day &amp; night']
-        for text in list_text:
-            print(text)
-            emojis = self.input_parser.getEmojis(text)
-            clean_text = self.input_parser.get_clean_text(text)
-            print(self.hate_speech_detector.get_text_score(clean_text, emojis))
-            print(self.LGBTQIA_detector.isTextRelated(clean_text))
+    def isHateSpeech(self):
+        return self.hate_speech_detector.isHateSpeech(self.cleanText, self.emojis)
 
+    def isLGBTQIASpeech(self):
+        return self.LGBTQIA_detector.isTextRelated(self.cleanText)
+
+    def newText(self, text):
+        self.text = text
+        self.cleanText = self.input_parser.get_clean_text(self.text)
+        self.emojis = self.input_parser.getEmojis(self.text)
+
+    def checkText(self, text):
+        isHateSpeech = True
+        isLGBTQIASpeech = True
+        self.newText(text)
+        if self.isHateSpeechDetector:
+            isHateSpeech = self.isHateSpeech()
+        if self.isLGBTQIASpeechDetector:
+            isLGBTQIASpeech = self.isLGBTQIASpeech()
+        if isHateSpeech and isLGBTQIASpeech:
+            return True
+        return False
+
+    def checkList(self, list):
+        results = []
+        for text in list:
+            results.append(self.checkText(text))
+        return results
+
+    def getTestResult(self):
+        isHateSpeechBool = self.isHateSpeech()
+        isLGBTQIASpeechBool = self.isLGBTQIASpeech()
+        if isHateSpeechBool and isLGBTQIASpeechBool:
+            return 'LGBT_hatespeech'
+        elif isHateSpeechBool:
+            return 'hatespeech'
+        elif isLGBTQIASpeechBool:
+            return 'LGBT'
+        else:
+            return 'none'
+
+    def calcTestResults(self, num):
+        targets = []
+        results = []
+        indexes = []
+        testData = self.testData.getTestData()
+
+        totalCount = 0
+        testResults = self.testData.getResults()
+        for result in testResults:
+            if len(result) > 0:
+                if result[1] == '-' or result[2] == '-':
+                    break
+                totalCount += 1
+        print(totalCount)
+        count = 0
+        progress = 0
+        min = totalCount
+        max = totalCount + num
+        for data in testData:
+            if count >= min and count < max:
+                self.newText(data[0])
+                result = self.getTestResult()
+                targets.append(data[1])
+                results.append(result)
+                indexes.append(count)
+                progress += 1
+                if progress < 250:
+                    if progress % 10 == 0:
+                        print(progress)
+                else:
+                    if progress % 50 == 0:
+                        print(progress)
+            count += 1
+        if len(targets) > 0:
+            self.testData.addResults(targets, results, indexes)
+
+    def getCorrectLGBTTestResults(self):
+        correctCount = 0
+        semiCorrectCount = 0
+        totalCount = 0
+        results = self.testData.getResults()
+        for result in results:
+            if len(result) > 0:
+                if result[1] == '-' or result[2] == '-':
+                    continue
+                if result[1] == 'LGBT_hatespeech':
+                    if result[2] == 'LGBT_hatespeech':
+                        correctCount += 1
+                        semiCorrectCount += 1
+                    elif result[2] == 'hatespeech':
+                        semiCorrectCount += 1
+                    totalCount += 1
+        print('Total: ' + str(totalCount))
+        print('Correct: ' + str(correctCount))
+        print(correctCount / totalCount)
+        print('Semi Correct: ' + str(semiCorrectCount))
+        print(semiCorrectCount / totalCount)
+
+    def resetResults(self):
+        self.testData.resetResults()
 
 Controller()
