@@ -60,9 +60,9 @@ class Controller:
         elif isHateSpeechBool:
             return 'hatespeech'
         elif isLGBTQIASpeechBool:
-            return 'LGBT'
+            return 'LGBT_non_hatespeech'
         else:
-            return 'none'
+            return 'non_hatespeech'
 
     def calcTestResults(self, num):
         targets = []

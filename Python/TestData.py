@@ -31,14 +31,17 @@ class TestData:
         rows = list(reader)
         testData = []
         for row in rows:
-            testData.append((row[1], type))
+            if len(row) > 0:
+                testData.append((row[1], type))
         csv_file.close()
         return testData
 
     def getTestData(self):
         testData = []
-        positive_test_data = self.get_text('reddit_comments_orientation_lgbtq_processed.csv', 'LGBT_hatespeech')
-        testData += positive_test_data
+        LGBT_hatespeech_test_data = self.get_text('reddit_comments_orientation_lgbtq_processed.csv', 'LGBT_hatespeech')
+        not_hatespeech_test_data = self.get_text('not_hatespeech.csv', 'non_hatespeech')
+        testData += LGBT_hatespeech_test_data
+        testData += not_hatespeech_test_data
         return testData
 
     def resetResults(self):
@@ -81,3 +84,30 @@ class TestData:
         csv_file.close()
         return rows
 
+    def cleanSentiment140Results(self):
+        text = self.get_path('training.1600000.processed.noemoticon.csv')
+        csv_file = open(text, 'r')
+        reader = csv.reader(csv_file)
+        rows = list(reader)
+        positiveRows = []
+        for row in rows:
+            if len(row) > 0:
+                if row[0] == '4':
+                    positiveRows.append(row)
+        if len(positiveRows) > 10000:
+            positiveRows = positiveRows[:10000]
+        csv_file.close()
+        return positiveRows
+
+    def create_clean_sentiment140(self):
+        nhs = self.get_path('not_hatespeech.csv')
+        csv_file = open(nhs, 'w')
+        csv_file.truncate(0)
+        writer = csv.writer(csv_file)
+        rows = self.cleanSentiment140Results()
+        print(rows[444][5])
+        for row in rows:
+            if len(row) > 0:
+                text = row[5]
+                writer.writerow(['', str(text)])
+        csv_file.close()
