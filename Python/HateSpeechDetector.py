@@ -9,9 +9,9 @@ class HateSpeechDetector:
     def __init__(self):
         self.input_parser = InputParser()
         self.csv_parser = CSVParser()
-        self.THRESHOLD = 0.15
-        self.HATE_SPEECH_THRESHOLD = 0.15
-        self.POSITIVE_SPEECH_THRESHOLD = 0.15
+        self.THRESHOLD = 0.3
+        self.HATE_SPEECH_THRESHOLD = 0.1
+        self.POSITIVE_SPEECH_THRESHOLD = 0.1
         self.HAS_INTERNET = False
         self.check_for_internet_connection()
         if self.HAS_INTERNET:
@@ -61,6 +61,7 @@ class HateSpeechDetector:
                 newValues.append(1)
             elif value < 0 - self.THRESHOLD:
                 newValues.append(-1)
+                newValues.append(-1)
         return newValues
 
     # Returns the synonyms for the word.
@@ -98,15 +99,20 @@ class HateSpeechDetector:
 
     def addEmojiScore(self, allValues, emojis):
         for emoji in emojis:
+            print(emojis)
             if emoji == '+':
                 allValues.append(1)
+                allValues.append(1)
+                allValues.append(1)
             elif emoji == '-':
+                allValues.append(-1)
+                allValues.append(-1)
                 allValues.append(-1)
         return allValues
 
     def isHateSpeech(self, text, emojis):
         score = self.get_text_score(text, emojis)
-        return score <= (1 - self.HATE_SPEECH_THRESHOLD)
+        return score <= (0 - self.HATE_SPEECH_THRESHOLD)
 
     def isPositiveSpeech(self, text, emojis):
         score = self.get_text_score(text, emojis)

@@ -1,823 +1,823 @@
-0,-,-
-1,-,-
-2,-,-
-3,-,-
-4,-,-
-5,-,-
-6,-,-
-7,-,-
-8,-,-
-9,-,-
-10,-,-
-11,-,-
-12,-,-
-13,-,-
-14,-,-
-15,-,-
-16,-,-
-17,-,-
-18,-,-
-19,-,-
-20,-,-
-21,-,-
-22,-,-
-23,-,-
-24,-,-
-25,-,-
-26,-,-
-27,-,-
-28,-,-
-29,-,-
-30,-,-
-31,-,-
-32,-,-
-33,-,-
-34,-,-
-35,-,-
-36,-,-
-37,-,-
-38,-,-
-39,-,-
-40,-,-
-41,-,-
-42,-,-
-43,-,-
-44,-,-
-45,-,-
-46,-,-
-47,-,-
-48,-,-
-49,-,-
-50,-,-
-51,-,-
-52,-,-
-53,-,-
-54,-,-
-55,-,-
-56,-,-
-57,-,-
-58,-,-
-59,-,-
-60,-,-
-61,-,-
-62,-,-
-63,-,-
-64,-,-
-65,-,-
-66,-,-
-67,-,-
-68,-,-
-69,-,-
-70,-,-
-71,-,-
-72,-,-
-73,-,-
-74,-,-
-75,-,-
-76,-,-
-77,-,-
-78,-,-
-79,-,-
-80,-,-
-81,-,-
-82,-,-
-83,-,-
-84,-,-
-85,-,-
-86,-,-
-87,-,-
-88,-,-
-89,-,-
-90,-,-
-91,-,-
-92,-,-
-93,-,-
-94,-,-
-95,-,-
-96,-,-
-97,-,-
-98,-,-
-99,-,-
-100,-,-
-101,-,-
-102,-,-
-103,-,-
-104,-,-
-105,-,-
-106,-,-
-107,-,-
-108,-,-
-109,-,-
-110,-,-
-111,-,-
-112,-,-
-113,-,-
-114,-,-
-115,-,-
-116,-,-
-117,-,-
-118,-,-
-119,-,-
-120,-,-
-121,-,-
-122,-,-
-123,-,-
-124,-,-
-125,-,-
-126,-,-
-127,-,-
-128,-,-
-129,-,-
-130,-,-
-131,-,-
-132,-,-
-133,-,-
-134,-,-
-135,-,-
-136,-,-
-137,-,-
-138,-,-
-139,-,-
-140,-,-
-141,-,-
-142,-,-
-143,-,-
-144,-,-
-145,-,-
-146,-,-
-147,-,-
-148,-,-
-149,-,-
-150,-,-
-151,-,-
-152,-,-
-153,-,-
-154,-,-
-155,-,-
-156,-,-
-157,-,-
-158,-,-
-159,-,-
-160,-,-
-161,-,-
-162,-,-
-163,-,-
-164,-,-
-165,-,-
-166,-,-
-167,-,-
-168,-,-
-169,-,-
-170,-,-
-171,-,-
-172,-,-
-173,-,-
-174,-,-
-175,-,-
-176,-,-
-177,-,-
-178,-,-
-179,-,-
-180,-,-
-181,-,-
-182,-,-
-183,-,-
-184,-,-
-185,-,-
-186,-,-
-187,-,-
-188,-,-
-189,-,-
-190,-,-
-191,-,-
-192,-,-
-193,-,-
-194,-,-
-195,-,-
-196,-,-
-197,-,-
-198,-,-
-199,-,-
-200,-,-
-201,-,-
-202,-,-
-203,-,-
-204,-,-
-205,-,-
-206,-,-
-207,-,-
-208,-,-
-209,-,-
-210,-,-
-211,-,-
-212,-,-
-213,-,-
-214,-,-
-215,-,-
-216,-,-
-217,-,-
-218,-,-
-219,-,-
-220,-,-
-221,-,-
-222,-,-
-223,-,-
-224,-,-
-225,-,-
-226,-,-
-227,-,-
-228,-,-
-229,-,-
-230,-,-
-231,-,-
-232,-,-
-233,-,-
-234,-,-
-235,-,-
-236,-,-
-237,-,-
-238,-,-
-239,-,-
-240,-,-
-241,-,-
-242,-,-
-243,-,-
-244,-,-
-245,-,-
-246,-,-
-247,-,-
-248,-,-
-249,-,-
-250,-,-
-251,-,-
-252,-,-
-253,-,-
-254,-,-
-255,-,-
-256,-,-
-257,-,-
-258,-,-
-259,-,-
-260,-,-
-261,-,-
-262,-,-
-263,-,-
-264,-,-
-265,-,-
-266,-,-
-267,-,-
-268,-,-
-269,-,-
-270,-,-
-271,-,-
-272,-,-
-273,-,-
-274,-,-
-275,-,-
-276,-,-
-277,-,-
-278,-,-
-279,-,-
-280,-,-
-281,-,-
-282,-,-
-283,-,-
-284,-,-
-285,-,-
-286,-,-
-287,-,-
-288,-,-
-289,-,-
-290,-,-
-291,-,-
-292,-,-
-293,-,-
-294,-,-
-295,-,-
-296,-,-
-297,-,-
-298,-,-
-299,-,-
-300,-,-
-301,-,-
-302,-,-
-303,-,-
-304,-,-
-305,-,-
-306,-,-
-307,-,-
-308,-,-
-309,-,-
-310,-,-
-311,-,-
-312,-,-
-313,-,-
-314,-,-
-315,-,-
-316,-,-
-317,-,-
-318,-,-
-319,-,-
-320,-,-
-321,-,-
-322,-,-
-323,-,-
-324,-,-
-325,-,-
-326,-,-
-327,-,-
-328,-,-
-329,-,-
-330,-,-
-331,-,-
-332,-,-
-333,-,-
-334,-,-
-335,-,-
-336,-,-
-337,-,-
-338,-,-
-339,-,-
-340,-,-
-341,-,-
-342,-,-
-343,-,-
-344,-,-
-345,-,-
-346,-,-
-347,-,-
-348,-,-
-349,-,-
-350,-,-
-351,-,-
-352,-,-
-353,-,-
-354,-,-
-355,-,-
-356,-,-
-357,-,-
-358,-,-
-359,-,-
-360,-,-
-361,-,-
-362,-,-
-363,-,-
-364,-,-
-365,-,-
-366,-,-
-367,-,-
-368,-,-
-369,-,-
-370,-,-
-371,-,-
-372,-,-
-373,-,-
-374,-,-
-375,-,-
-376,-,-
-377,-,-
-378,-,-
-379,-,-
-380,-,-
-381,-,-
-382,-,-
-383,-,-
-384,-,-
-385,-,-
-386,-,-
-387,-,-
-388,-,-
-389,-,-
-390,-,-
-391,-,-
-392,-,-
-393,-,-
-394,-,-
-395,-,-
-396,-,-
-397,-,-
-398,-,-
-399,-,-
-400,-,-
-401,-,-
-402,-,-
-403,-,-
-404,-,-
-405,-,-
-406,-,-
-407,-,-
-408,-,-
-409,-,-
-410,-,-
-411,-,-
-412,-,-
-413,-,-
-414,-,-
-415,-,-
-416,-,-
-417,-,-
-418,-,-
-419,-,-
-420,-,-
-421,-,-
-422,-,-
-423,-,-
-424,-,-
-425,-,-
-426,-,-
-427,-,-
-428,-,-
-429,-,-
-430,-,-
-431,-,-
-432,-,-
-433,-,-
-434,-,-
-435,-,-
-436,-,-
-437,-,-
-438,-,-
-439,-,-
-440,-,-
-441,-,-
-442,-,-
-443,-,-
-444,-,-
-445,-,-
-446,-,-
-447,-,-
-448,-,-
-449,-,-
-450,-,-
-451,-,-
-452,-,-
-453,-,-
-454,-,-
-455,-,-
-456,-,-
-457,-,-
-458,-,-
-459,-,-
-460,-,-
-461,-,-
-462,-,-
-463,-,-
-464,-,-
-465,-,-
-466,-,-
-467,-,-
-468,-,-
-469,-,-
-470,-,-
-471,-,-
-472,-,-
-473,-,-
-474,-,-
-475,-,-
-476,-,-
-477,-,-
-478,-,-
-479,-,-
-480,-,-
-481,-,-
-482,-,-
-483,-,-
-484,-,-
-485,-,-
-486,-,-
-487,-,-
-488,-,-
-489,-,-
-490,-,-
-491,-,-
-492,-,-
-493,-,-
-494,-,-
-495,-,-
-496,-,-
-497,-,-
-498,-,-
-499,-,-
-500,-,-
-501,-,-
-502,-,-
-503,-,-
-504,-,-
-505,-,-
-506,-,-
-507,-,-
-508,-,-
-509,-,-
-510,-,-
-511,-,-
-512,-,-
-513,-,-
-514,-,-
-515,-,-
-516,-,-
-517,-,-
-518,-,-
-519,-,-
-520,-,-
-521,-,-
-522,-,-
-523,-,-
-524,-,-
-525,-,-
-526,-,-
-527,-,-
-528,-,-
-529,-,-
-530,-,-
-531,-,-
-532,-,-
-533,-,-
-534,-,-
-535,-,-
-536,-,-
-537,-,-
-538,-,-
-539,-,-
-540,-,-
-541,-,-
-542,-,-
-543,-,-
-544,-,-
-545,-,-
-546,-,-
-547,-,-
-548,-,-
-549,-,-
-550,-,-
-551,-,-
-552,-,-
-553,-,-
-554,-,-
-555,-,-
-556,-,-
-557,-,-
-558,-,-
-559,-,-
-560,-,-
-561,-,-
-562,-,-
-563,-,-
-564,-,-
-565,-,-
-566,-,-
-567,-,-
-568,-,-
-569,-,-
-570,-,-
-571,-,-
-572,-,-
-573,-,-
-574,-,-
-575,-,-
-576,-,-
-577,-,-
-578,-,-
-579,-,-
-580,-,-
-581,-,-
-582,-,-
-583,-,-
-584,-,-
-585,-,-
-586,-,-
-587,-,-
-588,-,-
-589,-,-
-590,-,-
-591,-,-
-592,-,-
-593,-,-
-594,-,-
-595,-,-
-596,-,-
-597,-,-
-598,-,-
-599,-,-
-600,-,-
-601,-,-
-602,-,-
-603,-,-
-604,-,-
-605,-,-
-606,-,-
-607,-,-
-608,-,-
-609,-,-
-610,-,-
-611,-,-
-612,-,-
-613,-,-
-614,-,-
-615,-,-
-616,-,-
-617,-,-
-618,-,-
-619,-,-
-620,-,-
-621,-,-
-622,-,-
-623,-,-
-624,-,-
-625,-,-
-626,-,-
-627,-,-
-628,-,-
-629,-,-
-630,-,-
-631,-,-
-632,-,-
-633,-,-
-634,-,-
-635,-,-
-636,-,-
-637,-,-
-638,-,-
-639,-,-
-640,-,-
-641,-,-
-642,-,-
-643,-,-
-644,-,-
-645,-,-
-646,-,-
-647,-,-
-648,-,-
-649,-,-
-650,-,-
-651,-,-
-652,-,-
-653,-,-
-654,-,-
-655,-,-
-656,-,-
-657,-,-
-658,-,-
-659,-,-
-660,-,-
-661,-,-
-662,-,-
-663,-,-
-664,-,-
-665,-,-
-666,-,-
-667,-,-
-668,-,-
-669,-,-
-670,-,-
-671,-,-
-672,-,-
-673,-,-
-674,-,-
-675,-,-
-676,-,-
-677,-,-
-678,-,-
-679,-,-
-680,-,-
-681,-,-
-682,-,-
-683,-,-
-684,-,-
-685,-,-
-686,-,-
-687,-,-
-688,-,-
-689,-,-
-690,-,-
-691,-,-
-692,-,-
-693,-,-
-694,-,-
-695,-,-
-696,-,-
-697,-,-
-698,-,-
-699,-,-
-700,-,-
-701,-,-
-702,-,-
-703,-,-
-704,-,-
-705,-,-
-706,-,-
-707,-,-
-708,-,-
-709,-,-
-710,-,-
-711,-,-
-712,-,-
-713,-,-
-714,-,-
-715,-,-
-716,-,-
-717,-,-
-718,-,-
-719,-,-
-720,-,-
-721,-,-
-722,-,-
-723,-,-
-724,-,-
-725,-,-
-726,-,-
-727,-,-
-728,-,-
-729,-,-
-730,-,-
-731,-,-
-732,-,-
-733,-,-
-734,-,-
-735,-,-
-736,-,-
-737,-,-
-738,-,-
-739,-,-
-740,-,-
-741,-,-
-742,-,-
-743,-,-
-744,-,-
-745,-,-
-746,-,-
-747,-,-
-748,-,-
-749,-,-
-750,-,-
-751,-,-
-752,-,-
-753,-,-
-754,-,-
-755,-,-
-756,-,-
-757,-,-
-758,-,-
-759,-,-
-760,-,-
-761,-,-
-762,-,-
-763,-,-
-764,-,-
-765,-,-
-766,-,-
-767,-,-
-768,-,-
-769,-,-
-770,-,-
-771,-,-
-772,-,-
-773,-,-
-774,-,-
-775,-,-
-776,-,-
-777,-,-
-778,-,-
-779,-,-
-780,-,-
-781,-,-
-782,-,-
-783,-,-
-784,-,-
-785,-,-
-786,-,-
-787,-,-
-788,-,-
-789,-,-
-790,-,-
-791,-,-
-792,-,-
-793,-,-
-794,-,-
-795,-,-
-796,-,-
-797,-,-
-798,-,-
-799,-,-
-800,-,-
-801,-,-
-802,-,-
-803,-,-
-804,-,-
-805,-,-
-806,-,-
-807,-,-
-808,-,-
-809,-,-
-810,-,-
-811,-,-
-812,-,-
-813,-,-
-814,-,-
-815,-,-
-816,-,-
-817,-,-
-818,-,-
-819,-,-
+0,LGBT_hatespeech,hatespeech,would it turn you on if i said that all gays are mentally ill ? do you like being called retarted? hey retard hey stupid . you horny yet psycho
+1,LGBT_hatespeech,LGBT_hatespeech,yeah except gay people are mentally ill
+2,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill
+3,LGBT_hatespeech,LGBT_non_hatespeech,wow gay people truly are mentally ill after all that sounds like gay people are mentally ill to me
+4,LGBT_hatespeech,LGBT_hatespeech,thats like saying gay people are mentally ill none binary people excist it doesnt effects you why do you care
+5,LGBT_hatespeech,LGBT_non_hatespeech,same here. she told me today that gay people are only gay because theyre mentally ill degenerates and im like. hm.
+6,LGBT_hatespeech,LGBT_hatespeech,well that went from zero to gay people are mentally ill really quick.
+7,LGBT_hatespeech,LGBT_hatespeech,some fucktard did and left a message about how gay people are mentally ill and need to be put in their place. i told em to fuck off
+8,LGBT_hatespeech,LGBT_hatespeech,gays are mentally ill people. they had an error in their brains that sends the sexual attraction signal output for a same sex as them input.
+9,LGBT_hatespeech,hatespeech,would you consider belief in nazi style eugenics and the belief that gays are mentally ill problematic? yes obviously. why do you ask?
+10,non_hatespeech,non_hatespeech,I LOVE @Health4UandPets u guys r the best!! 
+11,non_hatespeech,non_hatespeech,im meeting up with one of my besties tonight! Cant wait!!  - GIRL TALK!!
+12,non_hatespeech,non_hatespeech,"@DaRealSunisaKim Thanks for the Twitter add, Sunisa! I got to meet you once at a HIN show here in the DC area and you were a sweetheart. "
+13,non_hatespeech,hatespeech,"Being sick can be really cheap when it hurts too much to eat real food  Plus, your friends make you soup"
+14,non_hatespeech,non_hatespeech,@LovesBrooklyn2 he has that effect on everyone 
+15,non_hatespeech,hatespeech,@ProductOfFear You can tell him that I just burst out laughing really loud because of that  Thanks for making me come out of my sulk!
+16,non_hatespeech,non_hatespeech,@r_keith_hill Thans for your response. Ihad already find this answer 
+17,non_hatespeech,non_hatespeech,"@KeepinUpWKris I am so jealous, hope you had a great time in vegas! how did you like the ACM's?! LOVE YOUR SHOW!! "
+18,non_hatespeech,non_hatespeech,"@tommcfly ah, congrats mr fletcher for finally joining twitter "
+19,non_hatespeech,hatespeech,@e4VoIP I RESPONDED  Stupid cat is helping me type. Forgive errors 
+20,LGBT_hatespeech,hatespeech,cmon. work that shovel. you havent even got to where he says all gays are mentally ill yet.
+21,LGBT_hatespeech,LGBT_hatespeech,agreed ive seen people around me changing their stand from gays are psychopaths to gay are mentally ill. which is a low bar but still progress.
+22,LGBT_hatespeech,hatespeech,gays are mentally ill in their own way
+23,LGBT_hatespeech,LGBT_hatespeech,anal sex does nothings but spread disease. gay people are mentally ill and mentally ill people shouldnt be in the military.
+24,LGBT_hatespeech,LGBT_hatespeech,you literally think all gay people are mentally ill i can see your post history. fuck off.
+25,LGBT_hatespeech,non_hatespeech,trans lesbians are mentally ill men identifying as women. doesnt sound normal to me. proud yeo terf
+26,LGBT_hatespeech,hatespeech,on the plus side we can appreciate that these mentally ill lesbians are taking themselves out of the gene pool.
+27,LGBT_hatespeech,hatespeech,and that is completely fine because gays are mentally ill and we dont want to see them even in real life.
+28,LGBT_hatespeech,hatespeech,gays are just people who want attention and are mentally ill
+29,LGBT_hatespeech,hatespeech,are you saying conservative gays are mentally ill?
+30,LGBT_hatespeech,hatespeech,so apparently gays are mentally ill?
+31,LGBT_hatespeech,LGBT_hatespeech,gay peoplearementally ill
+32,LGBT_hatespeech,LGBT_hatespeech,we also used to think that being female is synonymous with being attracted to men and that gay people are just confused and mentally ill
+33,LGBT_hatespeech,LGBT_hatespeech,gay people are disgusting and mentally ill
+34,LGBT_hatespeech,LGBT_hatespeech,are you trying to say that gay people are mentally ill? please say sike
+35,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill!  gay people are mentally ill!  what?
+36,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill and carry a bunch of other diseases with them.
+37,LGBT_hatespeech,hatespeech,considering that no one have debunked divergent evolution the bad effects of immigration and that most gays are mentally ill
+38,LGBT_hatespeech,hatespeech,gays are mentally ill so..
+39,LGBT_hatespeech,LGBT_non_hatespeech,lol. you think all gays are naturally gay? some of them are legitimately mentally ill.
+40,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill and carry a bunch of other diseases
+41,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill and carry a bunch of other diseases with them.
+42,LGBT_hatespeech,LGBT_hatespeech,i dont like it so its a mental disorder and bad i assume you also think gay people are mentally ill.
+43,LGBT_hatespeech,LGBT_hatespeech,so if gay people are mentally ill and you hate them does that mean you also hate people with other mental illnesses? wow
+44,LGBT_hatespeech,LGBT_hatespeech,im not the one that claims gay people are mentally ill.
+45,LGBT_hatespeech,LGBT_non_hatespeech,gay people are ok trans people are mentally ill
+46,LGBT_hatespeech,hatespeech,gays are mentally ill
+47,LGBT_hatespeech,hatespeech,gays are fine but trans are mentally ill and need treatment not acceptance.
+48,LGBT_hatespeech,LGBT_hatespeech,lol i dont have mental health issues youre a sick person for saying that. youre a homophobic pos i bet you think all gay people are mentally ill.
+49,LGBT_hatespeech,LGBT_hatespeech,and i never said gay people are mentally ill but here we go
+50,LGBT_hatespeech,LGBT_hatespeech,that gay people are mentally illwhich they are factually not again this is not my opinion but a fact and that its cursed cause they are bi.
+51,LGBT_hatespeech,LGBT_hatespeech,i joined it before and it was nothing but fury porn and hentai scat. left immediately. also saw daniel write gay people are mentally ill
+52,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill and enabled. it is a fetish.. not a sexuality.
+53,LGBT_hatespeech,LGBT_hatespeech,im not homophobic but gay people are mentally ill imo mom
+54,LGBT_hatespeech,LGBT_hatespeech,you went onto a lgbt subreddit and said gay people are mentally ill what the fuck did you expect to happen?
+55,LGBT_hatespeech,LGBT_hatespeech,sorry thats not true thats like saying all gay people are mentally ill its just an outdated stance. not all stress rises to the level of dysphoria.
+56,LGBT_hatespeech,hatespeech,b-b-but what aboutno. by definition lesbians are only into women. mentally ill men do not count.
+57,LGBT_hatespeech,hatespeech,all gays are mentally ill
+58,LGBT_hatespeech,LGBT_non_hatespeech,oh yeah im gay but gays are mentally ill! pick me! im a model minority!
+59,LGBT_hatespeech,LGBT_hatespeech,two real questions then do you think gay people are mentally ill? why do you think trans people are mentally ill?
+60,LGBT_hatespeech,LGBT_hatespeech,ah youre one of those  gay people are mentally ill dumb fucks.
+61,LGBT_hatespeech,LGBT_hatespeech,because gay people are mentally ill
+62,LGBT_hatespeech,LGBT_non_hatespeech,casual reminder that this restaurant chain actively funds homophobic organizations and thinks gay people are mentally ill. also popeyes is better.
+63,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill
+64,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill
+65,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill
+66,LGBT_hatespeech,hatespeech,that all gays are mentally ill and all blacks are irresponsible. overtime i figured out that my parents were racist and narcissistic.
+67,LGBT_hatespeech,hatespeech,he has one. its the_ donald. they think gays are mentally ill and pedos.
+68,LGBT_hatespeech,hatespeech,no i make money and you dont. me  you qed gays are mentally ill. change my mind.
+69,LGBT_hatespeech,hatespeech,america is degrading thanks to people like you. liberterians are hippy sxums. gays are mentally ill
+70,LGBT_hatespeech,LGBT_hatespeech,do you also think gay people are mentally ill?
+71,LGBT_hatespeech,LGBT_hatespeech,why do you think gay people are mentally ill
+72,LGBT_hatespeech,LGBT_hatespeech,so psychiatry has gone full circle from claiming gay people are mentally ill to saying that gay people dont exist.
+73,LGBT_hatespeech,LGBT_hatespeech,so you think gay people are mentally ill?
+74,LGBT_hatespeech,LGBT_hatespeech,if you identify as one yes. you are in the same boat as people in thes saying gay people are mentally ill and it should be illegal.
+75,LGBT_hatespeech,LGBT_hatespeech,update hes now talking about how gay people are mentally ill and need therapymedical assistance. ive lost faith in humanity
+76,LGBT_hatespeech,LGBT_non_hatespeech,so you think all gay people are mentally ill?
+77,LGBT_hatespeech,hatespeech,he said that gays are mentally ill. enough for me to realize who was in reality
+78,LGBT_hatespeech,hatespeech,gays are mentally ill so are you
+79,LGBT_hatespeech,LGBT_non_hatespeech,that is completely different. like. also yta for lowkey implying gay people are mentally ill.
+80,LGBT_hatespeech,LGBT_hatespeech,said that gay people are mentally ill and so are trannys
+81,LGBT_hatespeech,LGBT_hatespeech,would saying gay people are unnatural and mentally ill because god created adam and eve make you a homophobe a science denier or both?
+82,LGBT_hatespeech,LGBT_hatespeech,gay people are by all criteria of the definition mentally ill
+83,LGBT_hatespeech,LGBT_hatespeech,i love when my parents say they think gay people are mentally ill around me only because ive not come out to them yet . people do fucking care.
+84,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill
+85,LGBT_hatespeech,LGBT_hatespeech,i called you a bigot because you think gay people are mentally ill and shouldnt exist. at least be honest if youre going to be stupid.
+86,LGBT_hatespeech,LGBT_non_hatespeech,anyone who sticks up for or believes that gay people are born gay. are in fact mentally ill.
+87,LGBT_hatespeech,LGBT_hatespeech,why do you think gay people are mentally ill? i mean i get trans but like who cares if you like dick in your mouth?
+88,LGBT_hatespeech,LGBT_hatespeech,sure if you ignore our advances in underdtanding psychology and gender development. i bet you think gay people are mentally ill too.
+89,LGBT_hatespeech,non_hatespeech,apparently op has a massive crush on a possibly mentally ill teenager that works for him and thinks bisexuals are all disease carrying whores
+90,LGBT_hatespeech,hatespeech,parents be like  gays are mentally ill and should be erradicated
+91,LGBT_hatespeech,LGBT_hatespeech,that makes him gay and gays are mentally ill
+92,LGBT_hatespeech,hatespeech,gays are mentally ill
+93,LGBT_hatespeech,hatespeech,uh huh im sure you feel actual sympathy and this isnt just another  gays are mentally ill and need treatment! situation
+94,LGBT_hatespeech,hatespeech,ah understood. i guess gays are mentally ill and blacks are inferior. old facts btw guess that doesnt matter.
+95,LGBT_hatespeech,hatespeech,gays are mentally ill
+96,LGBT_hatespeech,LGBT_hatespeech,if a person was to say gay people are mentally ill no christian i have ever met thinks that being gay is an illness.
+97,LGBT_hatespeech,LGBT_hatespeech,i was on there earlier and saw comment threads talking about how gay people are mentally ill. not one comment had negative points.
+98,LGBT_hatespeech,LGBT_hatespeech,do you think gay people are also mentally ill?
+99,LGBT_hatespeech,LGBT_non_hatespeech,mental health if youre arguing that gay people are mentally ill im willing to listen.  perfect ignorance that has nothing to do with relativism.
+100,LGBT_hatespeech,LGBT_non_hatespeech,gay people are mentally ill just like pedos and incetous people. they need killing
+101,LGBT_hatespeech,hatespeech,lesbians are mentally ill why are the mentally unstable allowed on such expensive property?
+102,LGBT_hatespeech,hatespeech,lesbians are not there to validate the idiotic delusions of mentally ill men.
+103,LGBT_hatespeech,hatespeech,gays are not mentally ill degenerates and should be celebrated
+104,LGBT_hatespeech,hatespeech,she said gays are mentally ill and was belting out the hard-r for hours.
+105,LGBT_hatespeech,hatespeech,or women or how trans people are not real andor mentally ill and how gays are ok but need to stop flaunting their sexuality in front of everyone
+106,LGBT_hatespeech,hatespeech,they cant grow up because all gays are mentally ill.
+107,LGBT_hatespeech,non_hatespeech,yeah thanks for that answer. just saw that he believes gays are mentally ill. so much for logic.
+108,LGBT_hatespeech,LGBT_hatespeech,yeah gay people are mentally ill lmao
+109,LGBT_hatespeech,LGBT_hatespeech,so you agree that gay people are mentally ill which is wrong but then when corrected all of a sudden you do not care.right
+110,LGBT_hatespeech,LGBT_hatespeech,no. i dont think gay people are mentally ill. i didnt really read it if im honest
+111,LGBT_hatespeech,LGBT_hatespeech,its like saying gay people are mentally ill
+112,LGBT_hatespeech,hatespeech,even children can see that gays are mentally ill
+113,LGBT_hatespeech,hatespeech,gays are mentally ill people
+114,LGBT_hatespeech,hatespeech,the gays are mentally ill
+115,LGBT_hatespeech,hatespeech,gays are probably mentally ill. minorities and jews i have no opinion on.
+116,LGBT_hatespeech,LGBT_hatespeech,the whole trans and gay people are mentally ill thing is the hypothesis that youre throwing around like fact. dont play smart by playing dumb
+117,LGBT_hatespeech,LGBT_hatespeech,gay people are fucking mentally ill weirdos whats wrong with his comment exactly?
+118,LGBT_hatespeech,LGBT_hatespeech,its not socially acceptable to say gay people are mentally ill anymore so they target trans people instead.
+119,LGBT_hatespeech,LGBT_non_hatespeech,that would work great when southern sheriffs decide all gay people are mentally ill and therefor cant own guns.
+120,non_hatespeech,non_hatespeech,I LOVE @Health4UandPets u guys r the best!! 
+121,non_hatespeech,non_hatespeech,im meeting up with one of my besties tonight! Cant wait!!  - GIRL TALK!!
+122,non_hatespeech,non_hatespeech,"@DaRealSunisaKim Thanks for the Twitter add, Sunisa! I got to meet you once at a HIN show here in the DC area and you were a sweetheart. "
+123,non_hatespeech,hatespeech,"Being sick can be really cheap when it hurts too much to eat real food  Plus, your friends make you soup"
+124,non_hatespeech,non_hatespeech,@LovesBrooklyn2 he has that effect on everyone 
+125,non_hatespeech,hatespeech,@ProductOfFear You can tell him that I just burst out laughing really loud because of that  Thanks for making me come out of my sulk!
+126,non_hatespeech,non_hatespeech,@r_keith_hill Thans for your response. Ihad already find this answer 
+127,non_hatespeech,non_hatespeech,"@KeepinUpWKris I am so jealous, hope you had a great time in vegas! how did you like the ACM's?! LOVE YOUR SHOW!! "
+128,non_hatespeech,non_hatespeech,"@tommcfly ah, congrats mr fletcher for finally joining twitter "
+129,non_hatespeech,hatespeech,@e4VoIP I RESPONDED  Stupid cat is helping me type. Forgive errors 
+130,non_hatespeech,hatespeech,crazy day of school. there for 10 hours straiiight. about to watch the hills. @spencerpratt told me too! ha. happy birthday JB! 
+131,non_hatespeech,hatespeech,@naughtyhaughty HOW DID I FORGET ABOUT TWO AND A HALF MEN?!?!? I LOVE THAT SHOW!!! 
+132,non_hatespeech,non_hatespeech,"@nileyjileyluver Haha, don't worry! You'll get the hang of it! "
+133,non_hatespeech,hatespeech,"@soundwav2010 At least I won't be the only one feeling lost! This may cause me many later than usual nights, already addicting "
+134,non_hatespeech,non_hatespeech,@LutheranLucciol Make sure you DM me if you post a link to that video! &lt;LOL&gt;So I don't miss it   Better get permission and blessing first?
+135,non_hatespeech,non_hatespeech,Just added tweetie to my new iPhone 
+136,non_hatespeech,non_hatespeech,@michellardi i really don't know. i think its Globe!  yeah! sana gumaling na ko para alam ko na din kung makakasama ako! )
+137,non_hatespeech,non_hatespeech,@nicolerichie: your picture is very sweet 
+138,non_hatespeech,hatespeech,"Catching Up on Emails, RSS and Random BACN. Then I'm cutting out early tonight (11:30PM) to have Dinner with @lauraw "
+139,non_hatespeech,hatespeech,"Dancing around the room in Pjs, jamming to my ipod. Getting dizzy. Well twitter, you asked! "
+140,non_hatespeech,non_hatespeech,Didn't place in the Peeps contest but thanks for voting anyways. 
+141,non_hatespeech,hatespeech,Going to bed so goodnight everyone  and sweet dreams  http://twitpic.com/2y2e0
+142,non_hatespeech,non_hatespeech,@LittleLumen walking over to put the deposit down tomorrow 
+143,non_hatespeech,non_hatespeech,"is now followinq @DAChesterFrench , you shud do tha same "
+144,non_hatespeech,hatespeech,@LordPov Are you meant to add on the back of that &quot;twittering from a toilet cubicle somewhere&quot;? 
+145,non_hatespeech,hatespeech,Aw i'm holding my new puppy. Well He's not mine but He's a cutie. 
+146,non_hatespeech,non_hatespeech,@iJohn kitteh is sleepin on my crotch which proves she likes me more 
+147,non_hatespeech,non_hatespeech,@DramaBeats agreed 
+148,non_hatespeech,hatespeech,reaching amritsar in an hour and (if i find a bus) should be at wagah border by 2pm  - http://bkite.com/06fuJ
+149,non_hatespeech,non_hatespeech,@ALBinLA.  I was just thinking about you tonight!  You have to let me be the first to interview you're a famous super star 
+150,non_hatespeech,non_hatespeech,happy to spend time with the family. 
+151,non_hatespeech,hatespeech,finally going to bed!  so tired. Was gonna watch The Hills but didnt =/
+152,non_hatespeech,hatespeech,so effing tired of my throat hurting.... ooooohh... i just got a crazy craving for a pina colada/banana slushie!!!! 
+153,non_hatespeech,non_hatespeech,@deon upload di indowebster dong banggggg 
+154,non_hatespeech,non_hatespeech,@wisdomous you're welcome. glad you enjoyed it. 
+155,non_hatespeech,hatespeech,@hawaii808shellz hAhAHA!! omG! we wer bOth laughiN off d hOOk!  cuz das hOW we roLLL...ryt sheLdawg?
+156,non_hatespeech,hatespeech,@SickWithThePen awww pookie feel better. I'll pray for you...and BAG the nurse up 
+157,non_hatespeech,non_hatespeech,YAY! found a new cuddle buddy 
+158,non_hatespeech,hatespeech,I think I met my first &quot;snob&quot; on twitter tonight. Too bad. Life goes on! 
+159,non_hatespeech,non_hatespeech,Across the Universe. Sleep. Rehearsal tomorrow. 
+160,non_hatespeech,non_hatespeech,"@annabellee dry sweet potato, huh? "
+161,non_hatespeech,non_hatespeech,"@JonathanRKnight Hi Jon! Great to hear from you! See you on the cruise, I cannot wait! Hope all is well on the Knight bus!  You are loved!"
+162,non_hatespeech,non_hatespeech,having a long conversation with mom on phone 
+163,non_hatespeech,non_hatespeech,@suitelifeofkell yayyy! lol. i just requested herrr. what did she say? 
+164,non_hatespeech,non_hatespeech,Practicing lines/mannerisms/voices for upcoming feature shoot.  Probably driving Brock crazy.  
+165,non_hatespeech,hatespeech,Going to go and read new moon for the 3rd time  I cant get enough of twilight series 
+166,non_hatespeech,hatespeech,today is our two month anniversary!!! i love you sooooooo much Diana. omg you dont even know  TAR HEELS WON THE NCAA WOOT!!!!!
+167,non_hatespeech,non_hatespeech,I am bored 
+168,non_hatespeech,hatespeech,@stevecla it is a wallpaper with Red Square I was asking for 
+169,non_hatespeech,non_hatespeech,@r_keith_hill Thanks for your response. Ihad already find this answer 
+170,non_hatespeech,non_hatespeech,@Pope_Mello Well yeah! I only noticed cuz i'm BB too. 
+171,non_hatespeech,non_hatespeech,Just tryna get inspired thats all 
+172,non_hatespeech,hatespeech,@KourtneyKardash Can't get up early enough!!!  Night workouts are much better. 
+173,non_hatespeech,non_hatespeech,"@ladygaga Can't wait to see ur hot ass in Austin! woot woot!!! annnd love the bob with purple, i went the royal color way as well "
+174,non_hatespeech,hatespeech,"@QuotableBuffy I got a bunch of Buffy songs too! One of my faves is &quot;Vivian&quot; by Nerf Herder, when Faith met Spike in Buffy's body. "
+175,non_hatespeech,hatespeech,#Devunity Wallpaper  Check this out !   --&gt;    http://twitpic.com/2y2e2
+176,non_hatespeech,non_hatespeech,"Morning Tweetland, a long day ahead! Hope everyone has a great day  "
+177,non_hatespeech,non_hatespeech,   uploading pictures on friendster 
+178,non_hatespeech,non_hatespeech,@ash_CT Aw dont you love that  I love for those days! Thanks about the pic ;-p
+179,non_hatespeech,non_hatespeech,noodlebox with amanda tonight 
+180,non_hatespeech,non_hatespeech,"@una_avion2010 Sorrry, I'm doing like 29823782 different things. Kevin Jonas' Girlfriend "
+181,non_hatespeech,non_hatespeech,@fuzeb they are so serious too while singing like.. whoa  hehe lsd maybe? j/k lolol
+182,non_hatespeech,non_hatespeech,loving life... and loving you 
+183,non_hatespeech,non_hatespeech,@ApothecaryJeri  I love Sicilians best damn pizza on the planet [says I] 
+184,non_hatespeech,non_hatespeech,loves chocolate milk  and that is GF YEAH..
+185,non_hatespeech,hatespeech,Going to Sutter Creek tomorrow to tour an old Mine 
+186,non_hatespeech,hatespeech,"@bodycoach I'll look into that cho, I personally like strawberry but I'm going to become coach soon "
+187,non_hatespeech,hatespeech,"@little__fish guess where i live. the other side of the earth  east mesa, losiento"
+188,non_hatespeech,hatespeech,@paula_paige3489 so apart from the sore... how was the tryouts? 
+189,non_hatespeech,non_hatespeech,failed physics TEST... what a homo. keeen for the holidays (2 days to go) 
+190,non_hatespeech,non_hatespeech,"Just observed the update look of #Alexa website, http://tinyurl.com/c48gzf , looks great, seems Alexa is improving "
+191,non_hatespeech,non_hatespeech,@leiabox so what can you tell us about it? I'm totally geeking out right now 
+192,non_hatespeech,hatespeech,"@theragingocean BonJour Spacecowboy,I wish I was either of it .I work with Kids, can go out whenever I want and go wherever I want to "
+193,non_hatespeech,non_hatespeech,@Rebecca1158 goodnight. 
+194,non_hatespeech,hatespeech,My brother is sick too lol. Quite weird 
+195,non_hatespeech,non_hatespeech,@drdrew *gives a hug and a cookie* Hope you feel better! 
+196,non_hatespeech,non_hatespeech,@jonathanRKnight Hey Jon! It's real and I hope you take care of yourself...we don't want you to get too rundown.  ((Hugs))
+197,non_hatespeech,hatespeech,"Just wrote on a toilet wall... but only to correct poor spelling. And in highlighter, so it will wash off. HARDCORE "
+198,non_hatespeech,non_hatespeech,had a good tech meeting at clubZone - dinner was sushi 
+199,non_hatespeech,non_hatespeech,@mattgalloway Thanks for the hook up with @CarlyRush and suggesting me again bro! you rock! 
+200,non_hatespeech,non_hatespeech,@jeffswarens depends on which version they thought you  the one I know doesn't go like that ;)
+201,non_hatespeech,hatespeech,@Speak2Ashley hand is still pretty weak i cant like punch anyone out yet or turn knobs but it doesnt hurt much 
+202,non_hatespeech,non_hatespeech,@Honey3223 Lurkers now that was interesting 
+203,non_hatespeech,non_hatespeech,@saravananp mine is B North. Still need to decide 'aaru hithavaru ninage ee moovaroLage' to vote 
+204,non_hatespeech,hatespeech,@trstfndbby um I bought my shit from the Koreans its OACH  highest quality out there baby  I paid an extra 3.50 2 get a real tag sewed in
+205,non_hatespeech,non_hatespeech,eating ice-cream with chocolate topping 
+206,non_hatespeech,non_hatespeech,@iamdiddy your telling me.. just finished doing 200 crunches!  step it up Diddy ! LETS GO!
+207,non_hatespeech,non_hatespeech,@its_yvonne daaang i didn't know it was possible to talk that long! what'd you guys talk about 
+208,non_hatespeech,non_hatespeech,@LaurUy West.  Mostly San Jose and San Francisco.
+209,non_hatespeech,hatespeech,"Nikki is off working her ass off on a bike, trying to recover from her knee injury.  (Good for her. "
+210,non_hatespeech,non_hatespeech,@marymayblood I would love to come help unpack   Let me know where I need to be Sat afternoon!
+211,non_hatespeech,non_hatespeech,shenagians!  my team is awesome&lt;3
+212,non_hatespeech,hatespeech,listening to some music and just chilling....I'll probably regret not getting work done...but till then i'm just gonna kick back 
+213,non_hatespeech,non_hatespeech,I am doing a study of Think &amp; Grow Rich - Wow - it's amazing how timeless the law of attraction is! So now we're on our 6 step program! 
+214,non_hatespeech,non_hatespeech,@BittenbyBooks Oh good!  I'm glad you're feeling better!   I've been really good!  It'll be a crazy week though... In a good way! 
+215,non_hatespeech,non_hatespeech,21 Days till chris comes home and 67 days till summer 
+216,non_hatespeech,hatespeech,"@davidgideon Yeah, those were the days  - no, it's now around 1.47ish..."
+217,non_hatespeech,non_hatespeech,@therealjspace am I the first one to tell you you tweet the most while drinking! LOL. 
+218,non_hatespeech,non_hatespeech,@its_anne Kay thanks. 
+219,non_hatespeech,non_hatespeech,Goodnight 
+220,LGBT_hatespeech,LGBT_hatespeech,saying things like black people are gross women are stupid gay people are mentally ill arent opinions its just pointless undebatable hate speech.
+221,LGBT_hatespeech,LGBT_hatespeech,idk some people might have an issue with comments claiming that gay people are mentally ill.
+222,LGBT_hatespeech,LGBT_non_hatespeech,its moral and religious reasons. these are the same mentality that judge gay people are mentally ill. forget about scientific reasons.
+223,LGBT_hatespeech,LGBT_hatespeech,gay people are actually mentally ill people if you think about it
+224,LGBT_hatespeech,hatespeech,lesbians are mentally ill women with a disproportionate likelihood to inflict domestic abuse on their partners and any children they adopt.
+225,LGBT_hatespeech,hatespeech,further proof gays are mentally ill
+226,LGBT_hatespeech,hatespeech,hey xir businesses dont care mentally ill gays are about . of the market deal with it
+227,LGBT_hatespeech,hatespeech,gays and trannies are very different. gays are usually cool. and trannies are mentally ill.
+228,LGBT_hatespeech,LGBT_hatespeech,ive never heard him say gay people are mentally ill.
+229,LGBT_hatespeech,LGBT_hatespeech,why are trans people broken and mentally ill if gay people are not?
+230,LGBT_hatespeech,hatespeech,gays are brain washed. trans genderfags and pedos are mentally ill
+231,LGBT_hatespeech,hatespeech,you might have said mental illness since i didnt say gays are mentally ill
+232,LGBT_hatespeech,hatespeech,exactly. gays are mentally ill.
+233,LGBT_hatespeech,LGBT_hatespeech,pshh. gays are the real disgusting ones. and yes. gay pride. why the fuck would anybody be proud of being mentally ill?
+234,LGBT_hatespeech,hatespeech,not every homophobe thinks gays are mentally ill sickos.
+235,LGBT_hatespeech,LGBT_hatespeech,even if gay people are mentally ill thats still not an excuse to bully and oppress them.
+236,LGBT_hatespeech,hatespeech,gays are mentally ill and smell like rotting cum physical removal when
+237,LGBT_hatespeech,hatespeech,dae gays are mentally ill
+238,LGBT_hatespeech,hatespeech,m thats like lesbians are passively agreeing with the idea that trans people are mentally ill.
+239,LGBT_hatespeech,hatespeech,lol wtf have i been reading about jewish conspiracy theories and gays are mentally ill
+240,LGBT_hatespeech,hatespeech,gays are cool but keep those mentally ill ts away
+241,LGBT_hatespeech,hatespeech,i dont think gays are mentally ill.
+242,LGBT_hatespeech,hatespeech,also not everyone who is mentally ill is alt-right. people like the gays are famous for being very liberal.
+243,LGBT_hatespeech,hatespeech,are you saying that gays are mentally ill? yup thats exactly what hes saying. look at the replied is made to my comment its mind boggling.
+244,LGBT_hatespeech,hatespeech,gays are not mentally ill and you cant convince me otherwise good. weve established our povs that the other disagrees with. what now?
+245,LGBT_hatespeech,LGBT_hatespeech,gosh this subreddit is dumb af. they probably think gay people are mentally ill too.
+246,LGBT_hatespeech,LGBT_hatespeech,you think gay people are mentally ill. you. are. a. homophobe.
+247,LGBT_hatespeech,hatespeech,gays are mentally ill you gottem bro
+248,LGBT_hatespeech,LGBT_hatespeech,we are not mentally ill like gay people are we dont need pride parades to get attention for our sexuality.
+249,LGBT_hatespeech,non_hatespeech,it actually was very clever you just have no retort really hes being nice calling you mentally ill gays are vastly worse than that.
+250,LGBT_hatespeech,hatespeech,this is why gays are considered to be mentally ill. absolutely disgusting moral less degenerates who should be ridiculed in any respected society.
+251,LGBT_hatespeech,hatespeech,yeah.gays are into that shit.only the rare rare mentally ill bipolar girl who you risk catching charges from goes that crazy
+252,LGBT_hatespeech,LGBT_hatespeech,would you want a depressed bipolar person to run a country? because gay people are more likely to be mentally ill. people dont need unstable leaders.
+253,LGBT_hatespeech,LGBT_hatespeech,so gay people are mentally ill now?
+254,LGBT_hatespeech,hatespeech,i guess by your logic gays are also mentally ill? or do you have some completely arbitrary standard of what is natural
+255,LGBT_hatespeech,LGBT_hatespeech,for males that makes sense that gays are sex obsessed hedonists but for females theres no question that dykes are mentally ill
+256,LGBT_hatespeech,hatespeech,yeah gays are so upbeat and always having fun! they arent twice as likely to be mentally ill!
+257,LGBT_hatespeech,hatespeech,gays are either mentally ill or its a choice or both and should not be glorified either way.
+258,LGBT_hatespeech,LGBT_hatespeech,transphobia is cured through education why cant homophobia be as well? people who thing gays are mentally ill can be proven wrong and learn to change
+259,LGBT_hatespeech,LGBT_hatespeech,did you mean  people who are rejected by society are prone to mental illness or did you mean  gay people are mentally ill.
+260,LGBT_hatespeech,LGBT_hatespeech,ah so gay people are mentally ill too?
+261,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill
+262,LGBT_hatespeech,LGBT_hatespeech,that gay people are mentally ill and should seek help and therapy.
+263,LGBT_hatespeech,hatespeech,no because of everything other than the lg. bisexuals are just confused and the rest are just mentally ill.
+264,LGBT_hatespeech,LGBT_hatespeech,youre being downvoted because you are spreading misinformation by saying that gay people are mentally ill. that is baseless prejudice.
+265,LGBT_hatespeech,LGBT_hatespeech,its fucking disgusting and depraved. gay people are mentally ill and perform filthy acts that give them all kinds of diseases. thats why he resigned.
+266,LGBT_hatespeech,hatespeech,gays are mentally ill and love to spread their mental illness to others
+267,LGBT_hatespeech,hatespeech,gays are mentally ill
+268,LGBT_hatespeech,hatespeech,not something she enjoyed its hilarious that even mentally ill gays are ashamed of fucking that wet brained old fruit.
+269,LGBT_hatespeech,LGBT_non_hatespeech,gay people are mentally ill and their suicide rates std rates and average sexual partner count all show this.
+270,LGBT_hatespeech,LGBT_hatespeech,gay people are degenerates. hes not adapting hes mentally ill.
+271,LGBT_hatespeech,LGBT_hatespeech,gay people are mentally ill
+272,LGBT_hatespeech,LGBT_non_hatespeech,i find the twist from gay people are people all the way back to gay people are mentally ill hide yo children pretty interesting.
+273,LGBT_hatespeech,LGBT_hatespeech,i never said and dont think gay people are mentally ill. what the fuck you talkin about breh
+274,LGBT_hatespeech,LGBT_hatespeech,no gays are not mentally ill you are born as a gay person.
+275,LGBT_hatespeech,LGBT_hatespeech,per military standards gay people were mentally ill.so are you say gays are mentally ill?
+276,LGBT_hatespeech,hatespeech,ive said many times gays are mentally ill.
+277,LGBT_hatespeech,LGBT_hatespeech,do you really not have an opinion on whether gay people are mentally ill? come on man. grow a pair.
+278,LGBT_hatespeech,LGBT_hatespeech,also gay people are mentally ill
+279,LGBT_hatespeech,LGBT_hatespeech,designed? and now gay people are mentally ill? your a weird dude. oh and all sex is kinda icky body parts and fluid going everywhere.
+280,LGBT_hatespeech,LGBT_hatespeech,are you saying gay people are mentally ill?
+281,LGBT_hatespeech,hatespeech,til lesbians are mentally ill by virtue of being social justice warriors. besides that concensus is this ladys a piece of trash.
+282,LGBT_hatespeech,hatespeech,does yellow think all bisexuals are polygamous?
+283,LGBT_hatespeech,LGBT_non_hatespeech,so then you are saying gay people are also mentally ill?
+284,LGBT_hatespeech,LGBT_hatespeech,im not homophobic i just think gay people are mentally ill and have issues nothing wrong with that
+285,LGBT_hatespeech,LGBT_hatespeech,gay people are not mentally ill transsexuals are.
+286,LGBT_hatespeech,LGBT_hatespeech,thats the problem gay people are not mentally ill trans people are most gay people fucking hate the lgbt acronym
+287,LGBT_hatespeech,LGBT_hatespeech,im the homophobe traitor? do tell. are you mad because gay people are mentally ill?
+288,LGBT_hatespeech,LGBT_hatespeech,i transcend leagues. you think gay people are mentally ill.
+289,LGBT_hatespeech,hatespeech,yes but gays are far worse and they never settle down. even when they do they are often polygamous
+290,LGBT_hatespeech,LGBT_non_hatespeech,polygamous lesbians are the enemy of all straight men apparently
+291,LGBT_hatespeech,hatespeech,1 and no. 3 absolutely. its a common myth that bisexuals are automatically polygamous but most of us including me are not.
+292,LGBT_hatespeech,LGBT_non_hatespeech,interesting. seems like youre suggesting that gay people are hung and that the polygamous are compensating for their small peckers.
+293,LGBT_hatespeech,non_hatespeech,gays are so dramatic and flamboyant. it makes me want to set myself on fire.
+294,LGBT_hatespeech,LGBT_non_hatespeech,is the takeaway here is that he looks flamboyantly gay and were supposed to shame him for that? or flamboyant gays are acually dictators in disguise?
+295,LGBT_hatespeech,LGBT_non_hatespeech,maybe because gay people are just people. flamboyant is an act.
+296,LGBT_hatespeech,LGBT_hatespeech,no? his character was more flamboyant but not all gay people are.
+297,LGBT_hatespeech,LGBT_non_hatespeech,and you dont seem to realise that not all gay people are flamboyant and camp. you seem to have a very stereotypical view.
+298,LGBT_hatespeech,LGBT_hatespeech,gay people are fine but i hate the flamboyant ones like i hate any attention whore
+299,LGBT_hatespeech,non_hatespeech,i suspect lesbians are just less flamboyant so you notice them less.
+300,LGBT_hatespeech,hatespeech,why is it that fem and flamboyant gays are represented a lot but masc gays arent
+301,LGBT_hatespeech,LGBT_hatespeech,i guess it was good is showing that not all gay people are flamboyant and stereotypical. but it was so cheesy
+302,LGBT_hatespeech,non_hatespeech,doesnt conform.. they dont like them. period. flamboyant gays are annoyibg to some
+303,LGBT_hatespeech,hatespeech,some flamboyant gays are annoying
+304,LGBT_hatespeech,hatespeech,some non flamboyant gays are annoying.
+305,LGBT_hatespeech,LGBT_non_hatespeech,i feel like its a confirmation bias thing. people say gay people are flamboyant but you dont notice the ones that arent.
+306,LGBT_hatespeech,LGBT_non_hatespeech,and not all gay people are flamboyant.
+307,LGBT_hatespeech,LGBT_hatespeech,as a member of the lgbt community i can agree with this. flamboyant gays are the worst.
+308,LGBT_hatespeech,LGBT_hatespeech,no. every single flamboyant man i know has turned out to be gay. all of them throughout school college etc. not all gays are flamboyant however.
+309,LGBT_hatespeech,hatespeech,what do you expect when most gays are sexually unappealing femsflamboyant types.
+310,LGBT_hatespeech,LGBT_hatespeech,no gays are fine. the toxic flamboyant annoying gay community is not.
+311,LGBT_hatespeech,hatespeech,people are mean -at least some of them. the mean one are the most noticeable. gays are not different than others flamboyant or not.
+312,LGBT_hatespeech,hatespeech,on the contrary i find the flamboyant ones to be less desirable at least in my part of the world. most gays are more attracted to masc men.
+313,LGBT_hatespeech,hatespeech,only the loudest and most flamboyant gays are noticed and picked up by the media. many normal gays exist
+314,LGBT_hatespeech,LGBT_non_hatespeech,yeah the whole trevor stuff was bad but everything with ian and mickey showing that not all gay people are a flamboyant stereotype is great
+315,LGBT_hatespeech,LGBT_non_hatespeech,not all gay people are flamboyant
+316,LGBT_hatespeech,LGBT_non_hatespeech,yeah most gay people i know say they despise pride as it make it look like gay people are all flamboyant dickglitterer
+317,LGBT_hatespeech,hatespeech,those gays are so flamboyant it makes me want tonset myself of fire. now to figure out who hermano is.
+318,LGBT_hatespeech,hatespeech,most of these  tv flamboyant overacting and overemotional gays are just histrionics
+319,LGBT_hatespeech,non_hatespeech,i always thought gays are too flamboyant this show changed my perspective.
+320,LGBT_hatespeech,LGBT_non_hatespeech,confirmation bias. you think gay people are flamboyant so you dont notice the gay people who arent flamboyant.
+321,LGBT_hatespeech,LGBT_non_hatespeech,not all gay people are flamboyant
+322,LGBT_hatespeech,LGBT_hatespeech,if you want some gay stereotypes go get julia eyeroll not all gays are flamboyant rainbow loving people.
+323,LGBT_hatespeech,hatespeech,flamboyant gays are entitled and way too touchy. that is can be very harmful
+324,LGBT_hatespeech,LGBT_non_hatespeech,its always something about circumcising fat people how gay people are too flamboyant andor this topic
+325,LGBT_hatespeech,LGBT_hatespeech,just being annoyed alone is harmful to my peace of mind. flamboyant gay people are the gay version of a karen no one likes karen.
+326,LGBT_hatespeech,LGBT_non_hatespeech,i hate that show! it enforces the stereotype that all gay people are flamboyant.
+327,LGBT_hatespeech,non_hatespeech,most of the flamboyant gays are looking for masculine types anyway. its all good man.
+328,LGBT_hatespeech,non_hatespeech,in one piece all they gays are flamboyant.
+329,LGBT_hatespeech,LGBT_hatespeech,so gay people are more flamboyant but we have to put with alpha male bullshit every day?
+330,LGBT_hatespeech,LGBT_non_hatespeech,thats the trend with these kind of posts. straight acting gay people are the ideal now so if youre too flamboyant they want you fall back in line.
+331,LGBT_hatespeech,hatespeech,i dont know ops experience but saying that most gays are flamboyant is wrong.
+332,LGBT_hatespeech,hatespeech,gays are stereotypically lib left. sometimes you get a flamboyant rich boy type but those are more rare.
+333,LGBT_hatespeech,LGBT_hatespeech,so is being gay but you dont see people acting like the most flamboyant gays are somehow not annoying as fuck. keep it to yourself
+334,LGBT_hatespeech,LGBT_hatespeech,oh god the flamboyant gays are hard to be around. im gay guy and i cant stand be around them
+335,LGBT_hatespeech,LGBT_non_hatespeech,thats ridiculous. everyone knows that all gay people are flamboyant drag queens speak with a lisp and wear fishnet shirts with pride flag speedos.
+336,LGBT_hatespeech,LGBT_non_hatespeech,im gay and i dnot dress to brunch like that so. yeah. indicating all gay people are flamboyant and colorful is a stereotype that isnt funny.
+337,LGBT_hatespeech,LGBT_hatespeech,because every post would be  flamboyant gay people are annoying black people can be racist too and women sexually assult men too times an hour7
+338,LGBT_hatespeech,hatespeech,even then a lot of flamboyant gays are even more based than most of us its pretty hilarious.
+339,LGBT_hatespeech,non_hatespeech,my impression is that most gays are like pete. non-flamboyant and ordinary.
+340,LGBT_hatespeech,non_hatespeech,you look like flamboyant gays are always after you
+341,LGBT_hatespeech,non_hatespeech,normal gays are fine. flamboyant feminin gays that make their personality all about sucking cock are annoying
+342,LGBT_hatespeech,non_hatespeech,what the fuck? who care if some gays are flamboyant?
+343,LGBT_hatespeech,hatespeech,i can understand you not liking the flamboyant stereotype.. and then you said most gays are like that so yikes
+344,LGBT_hatespeech,LGBT_hatespeech,gay people are fun only the flamboyant ones! but ill pass on the sex.
+345,LGBT_hatespeech,LGBT_non_hatespeech,youre just playing the stereotype they hate that all gay people are flamboyant like ones at a pride parade.
+346,LGBT_hatespeech,LGBT_non_hatespeech,you dont understand how some gay people are more flamboyant than others?
+347,LGBT_hatespeech,LGBT_non_hatespeech,not all gay people are flamboyant.
+348,LGBT_hatespeech,LGBT_non_hatespeech,im not any of those but i hear often that all gay people are flamboyant
+349,LGBT_hatespeech,LGBT_non_hatespeech,gay people are ok if they are not flamboyant
+350,LGBT_hatespeech,LGBT_non_hatespeech,2 actually 1 is that all white men are privileged assholes. 2 is gay people are super flamboyant and cant take jokes about themselves.
+351,LGBT_hatespeech,LGBT_non_hatespeech,i mean idc if there gay but flamboyant gays are kinda annoying i dont care if ur gay so stop fucking telling me every mins
+352,LGBT_hatespeech,hatespeech,wait. does that mean that flamboyant gays are latent homophobes?
+353,LGBT_hatespeech,non_hatespeech,its weird how flamboyant attention whore gays are prominent in every aspect of leftism. cant have a climate protest without male twerking.
+354,LGBT_hatespeech,non_hatespeech,flamboyant gays are kos in my lobbies.
+355,LGBT_hatespeech,hatespeech,haha they gays are winning. flips them off with my flamboyant boner
+356,LGBT_hatespeech,LGBT_non_hatespeech,flamboyant gay people are annoying is what he should have put. even then in this day and age the slightest criticism will get you labeled homophobic
+357,LGBT_hatespeech,non_hatespeech,is that why all the older gays are super flamboyant?
+358,LGBT_hatespeech,non_hatespeech,but flamboyant gays are the best kind. its stereotypecliche often found in comedies but theres some truth to that theyre fun.
+359,LGBT_hatespeech,hatespeech,pretty much all gays are flamboyant and feminine
+360,LGBT_hatespeech,LGBT_non_hatespeech,you just know they think all gay people are overly flamboyant
+361,LGBT_hatespeech,LGBT_non_hatespeech,nothing about her is gay not only flamboyant gay people are gay you know.
+362,LGBT_hatespeech,LGBT_hatespeech,fans are annoying pieces of shit however gay people are fine a fag is a flamboyant gay person
+363,LGBT_hatespeech,hatespeech,m bad flamboyant gays are to the left upvotes are
+364,LGBT_hatespeech,hatespeech,not all people fall into stereotypes like how not all gays are flamboyant. you are attracted by who you are attracted to.
+365,LGBT_hatespeech,LGBT_non_hatespeech,some gay people are flamboyant even if they didnt want to thats just who they are.
+366,LGBT_hatespeech,LGBT_hatespeech,im about to hit ya with a double teamer. not all gay people are flamboyant and fabulous not all brits have rotten teeth and love tea.
+367,LGBT_hatespeech,non_hatespeech,big white gandalf beards are super flamboyant. all the gays are doing it!
+368,LGBT_hatespeech,LGBT_hatespeech,ah i see you cant see that flamboyance does not mean something is gay. most gays are normal people not the flamboyant stereotype we are portrayed as
+369,LGBT_hatespeech,hatespeech,stereotypical gays are flamboyantfeminine and its hard to respect a man that acts like that.
+370,LGBT_hatespeech,non_hatespeech,it also serves the stereotype that gays are overly sexualflamboyant.
+371,LGBT_hatespeech,LGBT_non_hatespeech,gay people are publicly executed if they act too flamboyant.
+372,LGBT_hatespeech,LGBT_non_hatespeech,the only way you can be homophobic is if you dont like people who are attracted to the same sex. not all gay people are flamboyant anyways. so nah.
+373,LGBT_hatespeech,LGBT_non_hatespeech,i think that when the subject is brought up you should try to present them the idea that not all gay people are flamboyant
+374,LGBT_hatespeech,LGBT_non_hatespeech,its kinda like  all gay people are flamboyant and wear bright colours. its a stereotype dont feel forced to do it or act that way
+375,LGBT_hatespeech,LGBT_hatespeech,the vast majority of gay people are not very flamboyant in their everyday lives. you only notice the ones who are because they stick out to you.
+376,LGBT_hatespeech,non_hatespeech,flamboyant effeminate sissy gays are the reason we have any rights whatsoever source?
+377,LGBT_hatespeech,LGBT_non_hatespeech,cause people are so ingrained in the idea that gay people are flamboyant that thats how theyd probably act.
+378,LGBT_hatespeech,hatespeech,love is love bro. not all gays are flamboyant in your face freaks.
+379,LGBT_hatespeech,hatespeech,meh i could care less. religion is cancer and flamboyant gays are annoying. why cant everyone just be fucking normal lmao
+380,LGBT_hatespeech,non_hatespeech,so the gays are acting flamboyant.
+381,LGBT_hatespeech,LGBT_hatespeech,not all gays are flamboyant. im a straight transman and i dont think like that. behaviors  demographics
+382,LGBT_hatespeech,LGBT_non_hatespeech,surely by saying that being flamboyant is considered too gay youre saying non-flamboyant gays are less gay?
+383,LGBT_hatespeech,non_hatespeech,i agree. i am almost certain that there are people who think all gays are flamboyant as you mentioned the stereotype.
+384,LGBT_hatespeech,LGBT_non_hatespeech,gay people like you trashing on flamboyant gays are why theyre having it even harder. as if we needed that as a community.
+385,LGBT_hatespeech,LGBT_non_hatespeech,so gay people are all flamboyant? or all flamboyant people are gay? im not sure where you are going with this. also flamenco is a style of dance.
+386,LGBT_hatespeech,LGBT_hatespeech,gay people are cool but the overly flamboyant ones are the ones i despise
+387,LGBT_hatespeech,non_hatespeech,i dont think op was at all implying all gays are flamboyant his post was just aimed at those types of people.
+388,LGBT_hatespeech,hatespeech,he never said all gays are flamboyant. you put words in his mouth. my god thank you
+389,LGBT_hatespeech,LGBT_hatespeech,most gays are even offended by the flamboyant gay pride marches with fetish gear tbf. pedos thats like a mile too far for most.
+390,LGBT_hatespeech,hatespeech,what do you jerk to? btw most gays are not girly and flamboyant fags. edit not that there is anything wrong with that.
+391,LGBT_hatespeech,LGBT_non_hatespeech,rfoundthehomophobe amp b fact not all gay people are the stereotypical camp flamboyant person. fact youre extremely ignorant to believe they all are.
+392,LGBT_hatespeech,LGBT_non_hatespeech,if it helps most gay people are just. people. the outright flamboyant sassy whatever gays arent even of us. theyre just the loudest.
+393,LGBT_hatespeech,LGBT_non_hatespeech,lmfao so youre saying that flamboyant gay people are only flamboyant because they are told thats how they should act?
+394,LGBT_hatespeech,LGBT_non_hatespeech,i mean gay people are often flamboyant
+395,LGBT_hatespeech,LGBT_non_hatespeech,theres the classic stereotype about all gays being feminine and flamboyant and that gay people are always into polygamy and hookups
+396,LGBT_hatespeech,hatespeech,girl what? pink news is trash but your reasonings for not liking them are very questionable. ive never seen pn say all gays are flamboyant.
+397,LGBT_hatespeech,non_hatespeech,his brother used to celebrate too much. his dad used to celebrate too much. lets face it the gays are pretty flamboyant with their celebrations.
+398,LGBT_hatespeech,non_hatespeech,flamboyant gays are my heros and the fact i cant be one just goes to show how much of a coward i am
+399,LGBT_hatespeech,LGBT_non_hatespeech,something like not all gays are flamboyant but all flamboyants are gay.
+400,LGBT_hatespeech,non_hatespeech,how? only one of flamboyant and many gays are like that.
+401,LGBT_hatespeech,non_hatespeech,many gays are flamboyant and attention-seeking
+402,LGBT_hatespeech,LGBT_non_hatespeech,thats a good explanation the gay people are just able to embrace their flamboyant side more.
+403,LGBT_hatespeech,LGBT_non_hatespeech,some gay people are flamboyant. some straight peo.
+404,LGBT_hatespeech,LGBT_non_hatespeech,i never mentioned race i basically said gay people are flamboyant monstrous.keep pretending you dont stereotype people as well
+405,LGBT_hatespeech,LGBT_non_hatespeech,so gay people are flamboyant?
+406,LGBT_hatespeech,LGBT_hatespeech,unpopular opinion flamboyant gay people are annoying i cant wait for this to get reposted tomorrow
+407,LGBT_hatespeech,LGBT_hatespeech,i love in gay mecca. most gays are quite masculine. flamboyant gays dont always have it very easy especially when trying to date or hook up.
+408,LGBT_hatespeech,non_hatespeech,all po c gays are flamboyant tie and sweater vest and all white gays are skinny probably trans and dyed hair there i said it
+409,LGBT_hatespeech,hatespeech,its perfectly fine to be annoyed by people who are extra. flamboyant gays are one of the most extra cultures out there
+410,LGBT_hatespeech,non_hatespeech,agreed flamboyant gays are insufferable.
+411,LGBT_hatespeech,hatespeech,yeah flamboyant gays are irritating they can eat a bag of dicks.
+412,LGBT_hatespeech,non_hatespeech,the gays are so flamboyant and dramatic they make me want to set myself on fire!
+413,LGBT_hatespeech,hatespeech,im aware of the definition. it also has no context here unless youre implying on flamboyant gays are comfortable being out.
+414,LGBT_hatespeech,LGBT_non_hatespeech,this. i feel you op though flamboyant gay people are nice but we just dont connect like that.
+415,LGBT_hatespeech,LGBT_non_hatespeech,i dont know i feel that most gays are hella chill about it now. hes being the flamboyantin-your-face gay stereotype from likeyears ago.
+416,LGBT_hatespeech,hatespeech,flamboyant gays are a problem. -you clearly not a homophobe
+417,LGBT_hatespeech,non_hatespeech,all gays are fabulous and flamboyant? is this? is that person years old?
+418,LGBT_hatespeech,hatespeech,his wording is seriously wrong but his point is valid. i believe he means that not all gays are flamboyant camp extroverts like sylvando is.
+419,LGBT_hatespeech,LGBT_non_hatespeech,because true gays are flamboyant as fuck. the ones who arent are only gay because they suffered childhood sexual trauma.
+420,LGBT_hatespeech,hatespeech,nah i think they hate gays because the flamboyant gays are really annoying and they group all gays into that loud minority of flamboyant gays.
+421,LGBT_hatespeech,LGBT_hatespeech,most gays are flamboyant though.in my experience a lot of them are perverts first thing are u gay are u bi thats how they act.
+422,LGBT_hatespeech,non_hatespeech,til one extremist means that entire group is insane therefore all gays are inferior degenerates due to a few flamboyant kids
+423,LGBT_hatespeech,LGBT_hatespeech,yes flamboyant gay people are incredibly annoying. theyre not brave sassy interesting theyre just annoying people.
+424,LGBT_hatespeech,non_hatespeech,why are you allowed to say that and flamboyant gays are fine.
+425,LGBT_hatespeech,hatespeech,flamboyant gays are the most annoying people in the world. definitely tops wanna be ghetto white girls.
+426,LGBT_hatespeech,LGBT_hatespeech,policing gays that are flamboyant is just as bad as straight people assuming all gays are. being masc isnt special or something to be celebrated.
+427,LGBT_hatespeech,LGBT_non_hatespeech,because all gay people are ridiculously flamboyant and are automatically sassy.
+428,LGBT_hatespeech,LGBT_non_hatespeech,its not homophobic because it was against gay people its homophobic because its based on the assumption that all gay people are flamboyant.
+429,LGBT_hatespeech,non_hatespeech,stereotypes. gays are often portrayed as being fashionable flamboyant and friends with mostly girls.
+430,LGBT_hatespeech,hatespeech,then avoid it the one day out of the year that the flamboyant gays are parading. its a pretty cool place pretty biodiverse.
+431,LGBT_hatespeech,LGBT_non_hatespeech,not all gay people are flamboyant. not all gay people will walk away when you ask for a fist fight. not all gay people scream at the sight of horror.
+432,LGBT_hatespeech,non_hatespeech,the flamboyant gays are oppressing me!
+433,LGBT_hatespeech,non_hatespeech,speak for yourself. thats like saying all gays are flamboyant and all fat people are lazy.
+434,LGBT_hatespeech,non_hatespeech,agreed. the extremely flamboyant gays are the ones tarnishing lbgt
+435,LGBT_hatespeech,hatespeech,most gays are not tranvestites also not all gays are flamboyant although there seems to be some correlation there
+436,LGBT_hatespeech,LGBT_non_hatespeech,gay people are cool as fuck. i cant stand flamboyant gay men though really irritating. attention seeking if nothing else
+437,LGBT_hatespeech,LGBT_non_hatespeech,gay people are cool. except for those flamboyant ones why try so hard to convince you that they are gay.
+438,LGBT_hatespeech,hatespeech,not all gays are flamboyant you know
+439,LGBT_hatespeech,non_hatespeech,really? i have. in bigger cities more flamboyant and effeminate gays are pretty common not the majority but just more common.
+440,LGBT_hatespeech,non_hatespeech,its the point! people must understand that we gays are not all divasflamboyant queens we are men.
+441,LGBT_hatespeech,non_hatespeech,the gays are so dramatic and flamboyant. it makes me want to set myself on fire!
+442,LGBT_hatespeech,LGBT_non_hatespeech,gay people are all flamboyant.
+443,LGBT_hatespeech,LGBT_non_hatespeech,not all gay people are flamboyant.
+444,LGBT_hatespeech,LGBT_non_hatespeech,stereotyping all gay people are flamboyant
+445,LGBT_hatespeech,LGBT_hatespeech,its not just that you worded it wrong its that you are wrong. not all gay people are super flamboyant and not all flamboyant people are gay.
+446,LGBT_hatespeech,LGBT_non_hatespeech,apparently this person thinks all gay people are flamboyant weirdos.
+447,LGBT_hatespeech,LGBT_hatespeech,yeah and gays are flamboyant campy annoying oversensitive cant do men work and can only think about sex.
+448,LGBT_hatespeech,LGBT_non_hatespeech,i told a friend once that for the most part gay people are flamboyant. rage insued.
+449,LGBT_hatespeech,LGBT_non_hatespeech,heres the funny thing not all flamboyant people are gay. same with the fact that not all gay people are flamboyant.
+450,LGBT_hatespeech,LGBT_hatespeech,flamboyant gays are the face of the lgbt community. i dont think a bunch of bromos going masc on grindr is oppression.
+451,LGBT_hatespeech,non_hatespeech,everybody knows gays are flamboyant.
+452,LGBT_hatespeech,hatespeech,yeah but flamboyant gays are fair game
+453,LGBT_hatespeech,hatespeech,too be fair flamboyant gays are really fucking annoying.
+454,LGBT_hatespeech,non_hatespeech,i think its hilarious because i think flamboyant gays are hilarious.
+455,LGBT_hatespeech,hatespeech,only if theyre flamboyant gays. regular gays are not visible enough to get coddled.
+456,LGBT_hatespeech,LGBT_hatespeech,and gay people are all flamboyant or man haters and theyre all suicidal thats what happens when u take dumb sitcoms seriously
+457,LGBT_hatespeech,non_hatespeech,thats because the most visible gays are the flamboyant fem ones.
+458,LGBT_hatespeech,hatespeech,from the fact that some gays are just flat out flamboyant and feminine.
+459,LGBT_hatespeech,LGBT_hatespeech,im not assuming that all gays are flamboyant or indifferent. im just curious if gay culture is similar regardless of nationality and culture.
+460,LGBT_hatespeech,non_hatespeech,so democrats and progressives are pedophiles now? or bisexuals are? please feel free to enlighten us on this sound reasoning
+461,LGBT_hatespeech,LGBT_hatespeech,some people will probably push this to say d a gay s a re ped ophil es
+462,LGBT_hatespeech,non_hatespeech,a homophobic meme saying all gays are pedophiles.
+463,LGBT_hatespeech,hatespeech,because its irrelevant and its gonna be some dumb shit about how gays are pedophiles
+464,LGBT_hatespeech,hatespeech,gays are pedophiles  whoop there it is  whoop there it is
+465,LGBT_hatespeech,LGBT_hatespeech,compassion. two minutes ago you posted as long as gays are included in lgbtq there will already be pedophiles in there very compassionate.
+466,LGBT_hatespeech,non_hatespeech,this is on the level of all gays are pedophiles. get a grip.
+467,LGBT_hatespeech,hatespeech,its not like gays are pedophiles too..
+468,LGBT_hatespeech,hatespeech,i do not understand like pedophiles are gaysyou know if they like lil boys but normal gays are just gays
+469,LGBT_hatespeech,non_hatespeech,the fuck makes you think these particular moms think gays are pedophiles
+470,LGBT_hatespeech,non_hatespeech,makes sense though lesbians are sexually attracted to women pedophiles are sexually attracted to younger people
+471,LGBT_hatespeech,hatespeech,shes not forcing anything? lesbians are lesbians its not a choice. yes even pedophile lesbians.
+472,LGBT_hatespeech,LGBT_non_hatespeech,no. poland is declaring several gay free zones. theyre saying that all gays are pedophiles and they think being gay is a ideology.
+473,LGBT_hatespeech,non_hatespeech,what in the fuck are you even trying to say here and what does it have to do with pattons joke? are you implying that all gays are pedophiles?
+474,LGBT_hatespeech,LGBT_hatespeech,lets just say that gays are a lot more likely to be pedophiles than straight people.
+475,LGBT_hatespeech,hatespeech,though that they made gays are pedophiles joke pissed me off.
+476,LGBT_hatespeech,LGBT_hatespeech,gay people are not pedophiles. i dont know if you intended to imply that but you did imply it.
+477,LGBT_hatespeech,non_hatespeech,yeah they just have to listen to those trucks saying all gays are pedophiles and politicians saying that gays dont have human rights.
+478,LGBT_hatespeech,non_hatespeech,ah right because the gays are all pedophiles? and they infiltrated the clergy?
+479,LGBT_hatespeech,LGBT_non_hatespeech,yes women and gay people are pedophiles. spoken like a true trumper lmao
+480,LGBT_hatespeech,non_hatespeech,alot of homophobic people think gays are pedophiles too.
+481,LGBT_hatespeech,LGBT_non_hatespeech,having a differing view doesnt always make you a bad person but thinking gay people are pedophiles does.
+482,LGBT_hatespeech,LGBT_hatespeech,whether its a sexuality or not gay people are to homophobes as pedophiles are to everyone else.
+483,LGBT_hatespeech,non_hatespeech,and i suppose all blacks are criminals. and i suppose all gays are pedophiles youre a typical bigot
+484,LGBT_hatespeech,hatespeech,dumbass bug. gays are worse than most pedophiles. except the ones that rape babies
+485,LGBT_hatespeech,LGBT_non_hatespeech,all gay people are pedophiles? what
+486,LGBT_hatespeech,LGBT_non_hatespeech,yes and qanon and believe gay people are pedophiles.
+487,LGBT_hatespeech,non_hatespeech,sounds like poland. welfare for families but gays are literally the same as pedophiles.
+488,LGBT_hatespeech,LGBT_hatespeech,gay people are not pedophiles. pedophiles are pedophiles.
+489,LGBT_hatespeech,LGBT_hatespeech,weird how she was able to say not all gays are pedophiles and its wrong to say that while also saying all gay people are pedophiles.
+490,LGBT_hatespeech,hatespeech,i love these generalizations! all black people are criminals all gays are pedophiles are cops are bad.
+491,LGBT_hatespeech,LGBT_hatespeech,a lot of it has to do with jws thinking gay people are pedophiles. heres what their own literature says
+492,LGBT_hatespeech,LGBT_non_hatespeech,yeah cause all gay people are pedophiles yes what an original take that isnt rooted in ignorance at all great job
+493,LGBT_hatespeech,LGBT_non_hatespeech,til only gay people are pedophiles in america
+494,LGBT_hatespeech,LGBT_non_hatespeech,do not listen to this person theyre a huge pos. they think all gay people are pedophiles.
+495,LGBT_hatespeech,hatespeech,nobody is saying all gays are pedophiles. read the damn post properly .
+496,LGBT_hatespeech,LGBT_non_hatespeech,yes gay people are pedophiles a huge percentage of them
+497,LGBT_hatespeech,LGBT_hatespeech,saying that gay people are pedophiles isnt an opinion
+498,LGBT_hatespeech,LGBT_non_hatespeech,all gay people are pedophiles. never understood where this is coming from most gay people i have come across have partners in their own age group.
+499,LGBT_hatespeech,LGBT_non_hatespeech,yeah cause all gay people are offending pedophiles! s
+500,LGBT_hatespeech,LGBT_hatespeech,gay people are born gay pedophiles are deeply sick individuals who need help. no offense but you do realize how dumb that statement is right?
+501,LGBT_hatespeech,LGBT_non_hatespeech,in russia gay people are associated with pedophiles.
+502,LGBT_hatespeech,LGBT_non_hatespeech,wait youre comparing being a pedophile to being gay? anti gay people are bigots. are you saying that anti-pedophiles are bigots?
+503,LGBT_hatespeech,LGBT_non_hatespeech,philippines were all gay people are considered pedophiles
+504,LGBT_hatespeech,LGBT_non_hatespeech,ah yes because trans people and gay people are obviously automatic pedophiles.
+505,LGBT_hatespeech,LGBT_non_hatespeech,because hes massively homophobic and essentially said gay people are pedophiles who shouldnt be around children
+506,LGBT_hatespeech,LGBT_hatespeech,saying that gay people are pedophiles? i thought every party had moved past that.
+507,LGBT_hatespeech,LGBT_hatespeech,its so sad to me how people fall for the same gay people are pedophiles etc how is it that people fall for statistics?
+508,LGBT_hatespeech,LGBT_non_hatespeech,does she think that all gay people are pedophiles too?
+509,LGBT_hatespeech,LGBT_non_hatespeech,pedophiles and gay people are essentially the same.
+510,LGBT_hatespeech,LGBT_non_hatespeech,all gay people are pedophiles my father every time ive seen him for the last fifteen years. i dont spend much time with him anymore.
+511,LGBT_hatespeech,LGBT_non_hatespeech,stonetoss almost certainly also believes that all gay people are pedophiles. guy is a literal nazi.
+512,LGBT_hatespeech,LGBT_non_hatespeech,surely a joke that has someone in the comments saying all gay people are pedophile groomers is not a err good one?
+513,LGBT_hatespeech,LGBT_non_hatespeech,gay post gays are pedophiles oppedophile
+514,LGBT_hatespeech,non_hatespeech,do you really think he jews and gays are similar enough to pedophiles and rapists to be killed? wth
+515,LGBT_hatespeech,LGBT_hatespeech,pedophiles  were lgbtq! lgbtq  ew get the fuck away from us weirdo! we dont want you here! dumb straight people  the gays are pedophiles!
+516,LGBT_hatespeech,hatespeech,and yet none of them speak out about trumps pedophilia or pedophilia in the catholic church. but i hear a lot about all the gays are pedophiles
+517,LGBT_hatespeech,non_hatespeech,the original sketch they are reenacting is apparently from the lates firmly in the all gays are pedophiles era
+518,LGBT_hatespeech,non_hatespeech,1 was that a gays are pedophiles joke? gross.
+519,LGBT_hatespeech,hatespeech,around little siblings? are you saying gays are pedophiles?
+520,non_hatespeech,non_hatespeech,I LOVE @Health4UandPets u guys r the best!! 
+521,non_hatespeech,non_hatespeech,im meeting up with one of my besties tonight! Cant wait!!  - GIRL TALK!!
+522,non_hatespeech,non_hatespeech,"@DaRealSunisaKim Thanks for the Twitter add, Sunisa! I got to meet you once at a HIN show here in the DC area and you were a sweetheart. "
+523,non_hatespeech,hatespeech,"Being sick can be really cheap when it hurts too much to eat real food  Plus, your friends make you soup"
+524,non_hatespeech,non_hatespeech,@LovesBrooklyn2 he has that effect on everyone 
+525,non_hatespeech,hatespeech,@ProductOfFear You can tell him that I just burst out laughing really loud because of that  Thanks for making me come out of my sulk!
+526,non_hatespeech,non_hatespeech,@r_keith_hill Thans for your response. Ihad already find this answer 
+527,non_hatespeech,non_hatespeech,"@KeepinUpWKris I am so jealous, hope you had a great time in vegas! how did you like the ACM's?! LOVE YOUR SHOW!! "
+528,non_hatespeech,non_hatespeech,"@tommcfly ah, congrats mr fletcher for finally joining twitter "
+529,non_hatespeech,hatespeech,@e4VoIP I RESPONDED  Stupid cat is helping me type. Forgive errors 
+530,non_hatespeech,hatespeech,crazy day of school. there for 10 hours straiiight. about to watch the hills. @spencerpratt told me too! ha. happy birthday JB! 
+531,non_hatespeech,hatespeech,@naughtyhaughty HOW DID I FORGET ABOUT TWO AND A HALF MEN?!?!? I LOVE THAT SHOW!!! 
+532,non_hatespeech,non_hatespeech,"@nileyjileyluver Haha, don't worry! You'll get the hang of it! "
+533,non_hatespeech,hatespeech,"@soundwav2010 At least I won't be the only one feeling lost! This may cause me many later than usual nights, already addicting "
+534,non_hatespeech,non_hatespeech,@LutheranLucciol Make sure you DM me if you post a link to that video! &lt;LOL&gt;So I don't miss it   Better get permission and blessing first?
+535,non_hatespeech,non_hatespeech,Just added tweetie to my new iPhone 
+536,non_hatespeech,non_hatespeech,@michellardi i really don't know. i think its Globe!  yeah! sana gumaling na ko para alam ko na din kung makakasama ako! )
+537,non_hatespeech,non_hatespeech,@nicolerichie: your picture is very sweet 
+538,non_hatespeech,hatespeech,"Catching Up on Emails, RSS and Random BACN. Then I'm cutting out early tonight (11:30PM) to have Dinner with @lauraw "
+539,non_hatespeech,hatespeech,"Dancing around the room in Pjs, jamming to my ipod. Getting dizzy. Well twitter, you asked! "
+540,non_hatespeech,non_hatespeech,Didn't place in the Peeps contest but thanks for voting anyways. 
+541,non_hatespeech,hatespeech,Going to bed so goodnight everyone  and sweet dreams  http://twitpic.com/2y2e0
+542,non_hatespeech,non_hatespeech,@LittleLumen walking over to put the deposit down tomorrow 
+543,non_hatespeech,non_hatespeech,"is now followinq @DAChesterFrench , you shud do tha same "
+544,non_hatespeech,hatespeech,@LordPov Are you meant to add on the back of that &quot;twittering from a toilet cubicle somewhere&quot;? 
+545,non_hatespeech,hatespeech,Aw i'm holding my new puppy. Well He's not mine but He's a cutie. 
+546,non_hatespeech,non_hatespeech,@iJohn kitteh is sleepin on my crotch which proves she likes me more 
+547,non_hatespeech,non_hatespeech,@DramaBeats agreed 
+548,non_hatespeech,hatespeech,reaching amritsar in an hour and (if i find a bus) should be at wagah border by 2pm  - http://bkite.com/06fuJ
+549,non_hatespeech,non_hatespeech,@ALBinLA.  I was just thinking about you tonight!  You have to let me be the first to interview you're a famous super star 
+550,non_hatespeech,non_hatespeech,happy to spend time with the family. 
+551,non_hatespeech,hatespeech,finally going to bed!  so tired. Was gonna watch The Hills but didnt =/
+552,non_hatespeech,hatespeech,so effing tired of my throat hurting.... ooooohh... i just got a crazy craving for a pina colada/banana slushie!!!! 
+553,non_hatespeech,non_hatespeech,@deon upload di indowebster dong banggggg 
+554,non_hatespeech,non_hatespeech,@wisdomous you're welcome. glad you enjoyed it. 
+555,non_hatespeech,hatespeech,@hawaii808shellz hAhAHA!! omG! we wer bOth laughiN off d hOOk!  cuz das hOW we roLLL...ryt sheLdawg?
+556,non_hatespeech,hatespeech,@SickWithThePen awww pookie feel better. I'll pray for you...and BAG the nurse up 
+557,non_hatespeech,non_hatespeech,YAY! found a new cuddle buddy 
+558,non_hatespeech,hatespeech,I think I met my first &quot;snob&quot; on twitter tonight. Too bad. Life goes on! 
+559,non_hatespeech,non_hatespeech,Across the Universe. Sleep. Rehearsal tomorrow. 
+560,non_hatespeech,non_hatespeech,"@annabellee dry sweet potato, huh? "
+561,non_hatespeech,non_hatespeech,"@JonathanRKnight Hi Jon! Great to hear from you! See you on the cruise, I cannot wait! Hope all is well on the Knight bus!  You are loved!"
+562,non_hatespeech,non_hatespeech,having a long conversation with mom on phone 
+563,non_hatespeech,non_hatespeech,@suitelifeofkell yayyy! lol. i just requested herrr. what did she say? 
+564,non_hatespeech,non_hatespeech,Practicing lines/mannerisms/voices for upcoming feature shoot.  Probably driving Brock crazy.  
+565,non_hatespeech,hatespeech,Going to go and read new moon for the 3rd time  I cant get enough of twilight series 
+566,non_hatespeech,hatespeech,today is our two month anniversary!!! i love you sooooooo much Diana. omg you dont even know  TAR HEELS WON THE NCAA WOOT!!!!!
+567,non_hatespeech,non_hatespeech,I am bored 
+568,non_hatespeech,hatespeech,@stevecla it is a wallpaper with Red Square I was asking for 
+569,non_hatespeech,non_hatespeech,@r_keith_hill Thanks for your response. Ihad already find this answer 
+570,non_hatespeech,non_hatespeech,@Pope_Mello Well yeah! I only noticed cuz i'm BB too. 
+571,non_hatespeech,non_hatespeech,Just tryna get inspired thats all 
+572,non_hatespeech,hatespeech,@KourtneyKardash Can't get up early enough!!!  Night workouts are much better. 
+573,non_hatespeech,non_hatespeech,"@ladygaga Can't wait to see ur hot ass in Austin! woot woot!!! annnd love the bob with purple, i went the royal color way as well "
+574,non_hatespeech,hatespeech,"@QuotableBuffy I got a bunch of Buffy songs too! One of my faves is &quot;Vivian&quot; by Nerf Herder, when Faith met Spike in Buffy's body. "
+575,non_hatespeech,hatespeech,#Devunity Wallpaper  Check this out !   --&gt;    http://twitpic.com/2y2e2
+576,non_hatespeech,non_hatespeech,"Morning Tweetland, a long day ahead! Hope everyone has a great day  "
+577,non_hatespeech,non_hatespeech,   uploading pictures on friendster 
+578,non_hatespeech,non_hatespeech,@ash_CT Aw dont you love that  I love for those days! Thanks about the pic ;-p
+579,non_hatespeech,non_hatespeech,noodlebox with amanda tonight 
+580,non_hatespeech,non_hatespeech,"@una_avion2010 Sorrry, I'm doing like 29823782 different things. Kevin Jonas' Girlfriend "
+581,non_hatespeech,non_hatespeech,@fuzeb they are so serious too while singing like.. whoa  hehe lsd maybe? j/k lolol
+582,non_hatespeech,non_hatespeech,loving life... and loving you 
+583,non_hatespeech,non_hatespeech,@ApothecaryJeri  I love Sicilians best damn pizza on the planet [says I] 
+584,non_hatespeech,non_hatespeech,loves chocolate milk  and that is GF YEAH..
+585,non_hatespeech,hatespeech,Going to Sutter Creek tomorrow to tour an old Mine 
+586,non_hatespeech,hatespeech,"@bodycoach I'll look into that cho, I personally like strawberry but I'm going to become coach soon "
+587,non_hatespeech,hatespeech,"@little__fish guess where i live. the other side of the earth  east mesa, losiento"
+588,non_hatespeech,hatespeech,@paula_paige3489 so apart from the sore... how was the tryouts? 
+589,non_hatespeech,non_hatespeech,failed physics TEST... what a homo. keeen for the holidays (2 days to go) 
+590,non_hatespeech,non_hatespeech,"Just observed the update look of #Alexa website, http://tinyurl.com/c48gzf , looks great, seems Alexa is improving "
+591,non_hatespeech,non_hatespeech,@leiabox so what can you tell us about it? I'm totally geeking out right now 
+592,non_hatespeech,hatespeech,"@theragingocean BonJour Spacecowboy,I wish I was either of it .I work with Kids, can go out whenever I want and go wherever I want to "
+593,non_hatespeech,non_hatespeech,@Rebecca1158 goodnight. 
+594,non_hatespeech,hatespeech,My brother is sick too lol. Quite weird 
+595,non_hatespeech,non_hatespeech,@drdrew *gives a hug and a cookie* Hope you feel better! 
+596,non_hatespeech,non_hatespeech,@jonathanRKnight Hey Jon! It's real and I hope you take care of yourself...we don't want you to get too rundown.  ((Hugs))
+597,non_hatespeech,hatespeech,"Just wrote on a toilet wall... but only to correct poor spelling. And in highlighter, so it will wash off. HARDCORE "
+598,non_hatespeech,non_hatespeech,had a good tech meeting at clubZone - dinner was sushi 
+599,non_hatespeech,non_hatespeech,@mattgalloway Thanks for the hook up with @CarlyRush and suggesting me again bro! you rock! 
+600,non_hatespeech,non_hatespeech,@jeffswarens depends on which version they thought you  the one I know doesn't go like that ;)
+601,non_hatespeech,hatespeech,@Speak2Ashley hand is still pretty weak i cant like punch anyone out yet or turn knobs but it doesnt hurt much 
+602,non_hatespeech,non_hatespeech,@Honey3223 Lurkers now that was interesting 
+603,non_hatespeech,non_hatespeech,@saravananp mine is B North. Still need to decide 'aaru hithavaru ninage ee moovaroLage' to vote 
+604,non_hatespeech,hatespeech,@trstfndbby um I bought my shit from the Koreans its OACH  highest quality out there baby  I paid an extra 3.50 2 get a real tag sewed in
+605,non_hatespeech,non_hatespeech,eating ice-cream with chocolate topping 
+606,non_hatespeech,non_hatespeech,@iamdiddy your telling me.. just finished doing 200 crunches!  step it up Diddy ! LETS GO!
+607,non_hatespeech,non_hatespeech,@its_yvonne daaang i didn't know it was possible to talk that long! what'd you guys talk about 
+608,non_hatespeech,non_hatespeech,@LaurUy West.  Mostly San Jose and San Francisco.
+609,non_hatespeech,hatespeech,"Nikki is off working her ass off on a bike, trying to recover from her knee injury.  (Good for her. "
+610,non_hatespeech,non_hatespeech,@marymayblood I would love to come help unpack   Let me know where I need to be Sat afternoon!
+611,non_hatespeech,non_hatespeech,shenagians!  my team is awesome&lt;3
+612,non_hatespeech,hatespeech,listening to some music and just chilling....I'll probably regret not getting work done...but till then i'm just gonna kick back 
+613,non_hatespeech,non_hatespeech,I am doing a study of Think &amp; Grow Rich - Wow - it's amazing how timeless the law of attraction is! So now we're on our 6 step program! 
+614,non_hatespeech,non_hatespeech,@BittenbyBooks Oh good!  I'm glad you're feeling better!   I've been really good!  It'll be a crazy week though... In a good way! 
+615,non_hatespeech,non_hatespeech,21 Days till chris comes home and 67 days till summer 
+616,non_hatespeech,hatespeech,"@davidgideon Yeah, those were the days  - no, it's now around 1.47ish..."
+617,non_hatespeech,non_hatespeech,@therealjspace am I the first one to tell you you tweet the most while drinking! LOL. 
+618,non_hatespeech,non_hatespeech,@its_anne Kay thanks. 
+619,non_hatespeech,non_hatespeech,Goodnight 
+620,non_hatespeech,hatespeech,I am determined to get back into baseball -- it's been 5 years since I've really watched the sport. Anyone interested in going to a game? 
+621,non_hatespeech,non_hatespeech,"@beycah Good for you Becca, have a good sleep. "
+622,non_hatespeech,non_hatespeech,@MissNappyBoy and ur home is where? ohhh i nkow lexington ky rite next to me 
+623,non_hatespeech,hatespeech,Just seen the preview for the movie &quot;Obsessed&quot; w/ Beyonce. Wow one crazy broad in that movie &amp; Beyonce seems to go nuts in it too! 
+624,non_hatespeech,hatespeech,Easy Rider till I fall asleep 
+625,non_hatespeech,non_hatespeech,"@miketomalaris I'm very, very, very excited about the live broadcast of Paris-Roubaix. "
+626,non_hatespeech,non_hatespeech,"just had a real good moment. i missssssssss him so much, "
+627,non_hatespeech,non_hatespeech,@belliestobabies I have two too. I just don't know how people survive winter without jungle gyms at home 
+628,non_hatespeech,non_hatespeech,@jaredleto Just started to work. But it's the last one before holidayholiday!! 
+629,non_hatespeech,non_hatespeech,Watchin Greek then off to Knighty Knight!! 
+630,non_hatespeech,non_hatespeech,i am working on my media room design and i love love love my client profile 
+631,non_hatespeech,non_hatespeech,@Greeks05 its pretty lame..hahaha but yay i get to stalk your sexy ass on here now 
+632,non_hatespeech,non_hatespeech,"@Lou911 Aww, thanks "
+633,non_hatespeech,non_hatespeech,Another good day  nitey nite everyone! First day of school tomorrow!!! Ahh I'm kinda nervous yet excited...til tomorrow!
+634,non_hatespeech,non_hatespeech,thinking and planning 
+635,non_hatespeech,non_hatespeech,"Good enough.. time to go sleep off whatever I can, be happier tomorrow ? here's Hopin.. go check my Fb. for what is in store for me now. "
+636,non_hatespeech,non_hatespeech,"@missvic what do you mean, I do those things now and I'm OLD! "
+637,non_hatespeech,non_hatespeech,@jimmyeatworld been listening to that all morning  http://www.deezer.com/track/885843
+638,non_hatespeech,non_hatespeech,@UrbanThai  and you have me to thank for that 
+639,non_hatespeech,hatespeech,"@PamFR Thanks Pam... glad you enjoyed it. Yes, life is short, it's *now*. No need to struggle... just make better choices every day. "
+640,non_hatespeech,hatespeech,"@JonathanRKnight hmm you have a lot to say tonight! That's great!  Of course, here I am up late reading it. haha"
+641,non_hatespeech,non_hatespeech,"@guykawasaki congrats on 100,000 followers. Wow almost 4 times of what I have "
+642,non_hatespeech,non_hatespeech,@LarryCarroll ARE WE GOING TO BE GETTING ANY NM UPDATES THIS TIME AROUND? I'm not really screaming. Just wondering. Thanks! 
+643,non_hatespeech,non_hatespeech,@suitelifeofkell that's freakin' cooool   i love twitter .haha
+644,non_hatespeech,hatespeech,@I3renda maybe. there's nothing wrong with being caring. but try not to care too much. 
+645,non_hatespeech,hatespeech,why does Brissa not even know she has a twitter? -Lauren 
+646,non_hatespeech,non_hatespeech,@jbrotherlove I thought it was a great love story 
+647,non_hatespeech,non_hatespeech,"@enbaldarlingg No, that's just the mirror you're looking in. "
+648,non_hatespeech,non_hatespeech,@amandahesser thanks!  i couldn't have done it without you  
+649,non_hatespeech,hatespeech,"wow that was neat, thanks God! OVERITNOW&lt;3  i apologize for sharing my spiritual moment with the general public of Twitter "
+650,non_hatespeech,non_hatespeech,... 31 days until I leave for Ontario!! 
+651,non_hatespeech,non_hatespeech,Just spoke with my fam in #Japan via #Skype! Love to see my little 16-mo-old nephew growing! 
+652,non_hatespeech,hatespeech,@LissyM ahh i only just saw you'd written that where does it tell you that someones spoken to you? this sucks but mcfly got it haha loser 
+653,non_hatespeech,non_hatespeech,@KaciMaureen holy laundry woman! 
+654,non_hatespeech,hatespeech,"@iamdiddy I hate it too, but I just got back from the trainer. Go! "
+655,non_hatespeech,non_hatespeech,@markhoppus lol you�re so fucking funny 
+656,non_hatespeech,non_hatespeech,"working on setting up my ipod touch, which as of today is officially mine!! "
+657,non_hatespeech,non_hatespeech,@nikhilnarayanan saw the tvc yesterday.. worked for me 
+658,non_hatespeech,hatespeech,Jon could totally say Mannies and Peddies and I would shut my fat face about it.  
+659,non_hatespeech,non_hatespeech,"@magopus Hahaha! Well if they ever run out of ideas, I'm nominating you to come up with some good ones. "
+660,non_hatespeech,hatespeech,A friend feels like a beer on a Monday night. That's never good. But beer is always good. Always. 
+661,non_hatespeech,hatespeech,"@hopeinhell One usually follows the other, no? "
+662,non_hatespeech,non_hatespeech,"@special72 Thanks, Special 72!  "
+663,non_hatespeech,non_hatespeech,"Good luck for Lauren and the rest of the cast of TBS, can't wait for something to leak "
+664,non_hatespeech,non_hatespeech,"Shoot For The Moon! Even if you miss, you'll land among the stars. "
+665,non_hatespeech,non_hatespeech,"@JohnHays hmm, that I don't agree with entirely because I am most creative &amp; vibrant @ night for some reason...but I need 2 sleep too "
+666,non_hatespeech,non_hatespeech,@izzakizza nada just tryna holla holla.   hows the mixtape coming up?
+667,non_hatespeech,non_hatespeech,@aussie_ali  yep it makes it so much easier to get points across in 140 
+668,non_hatespeech,hatespeech,"@snarkattack  The freezer-worthy @amoir has already given it her scholarly attention, but I suppose another set of eyes could hurt not."
+669,non_hatespeech,non_hatespeech,http://twitpic.com/2y2jf - my cupcakes 
+670,non_hatespeech,non_hatespeech,"@purrplexa And its a wonderful thing!  I'm all in favor of using the entire English language (shit, I use #expletives too, I think) "
+671,non_hatespeech,hatespeech,@mynameisgerard haha! i'm not saying u should try it.. but maybe u should 
+672,non_hatespeech,hatespeech,"back from school, long walk! its flippin cold outside  2 days ago it was sunny, next day raining, and today snowing!"
+673,non_hatespeech,hatespeech,@sisterpatterson I just ate raw cookie dough out of a tub and now to bed. We must be kindred spirits 
+674,non_hatespeech,hatespeech,"@JonathanRKnight : agreed. internet? random. but i like random. watched dirty dancing, great movie, i thought of your song..  nighty night"
+675,non_hatespeech,non_hatespeech,@blooms5887 Just use Tweetdeck and you can update facebook and twitter at the same time 
+676,non_hatespeech,non_hatespeech,"@firestoned - Dude, stars are always awesome.    Surprised to see you tweeting."
+677,non_hatespeech,hatespeech,@nsastrasasmita k. i'll try to figure it out. i'm gonna go to bed. night night  
+678,non_hatespeech,hatespeech,amazing night with llama and malcolm and megan&lt;---fuck the theatre! 
+679,non_hatespeech,non_hatespeech,@kayotae Just had a martini myself. 
+680,non_hatespeech,non_hatespeech,city all day soo happy to be home. school in the morning 
+681,non_hatespeech,non_hatespeech,My spring break= watching moviess all day everyday for a week 
+682,non_hatespeech,non_hatespeech,@PushPlayNICK &quot;Grandpa wants an ice chest and some beef.&quot;  George Lopez rulesss!
+683,non_hatespeech,hatespeech,@KatiePorrello thank you Katie! heading to the club as we speak! you have yourself a stellar night as well... take it easy homey!! 
+684,non_hatespeech,hatespeech,"http://www.youtube.com/watch?v=cLe9pJSRas0 Where have all the flowers gone, Peter Paul &amp; Mary  My fav, def."
+685,non_hatespeech,non_hatespeech,shhhhhhhhhh....time to watch the Hills. 
+686,non_hatespeech,non_hatespeech,"since posting the 2 new photos on my website with the kids my hit count went up...way, way, way up. love to china for 5,000 views alone. "
+687,non_hatespeech,non_hatespeech,@JonathanRKnight Oh its real Jon!  We all r so excited that u and the guys came back 4 us.  We appreciate all you put out there!  
+688,non_hatespeech,non_hatespeech,@LonelyBob Thank you! Am at home pretty much everywhere. Provided I have broadband ...kiddin' 
+689,non_hatespeech,non_hatespeech,Callin it a night! I always have the best sleep after a good workout!! 
+690,non_hatespeech,non_hatespeech,@Infinitarchitek Feels pretty good doesn't it? 
+691,non_hatespeech,non_hatespeech,@stee322 but you did go to hash bash anyway.. 
+692,non_hatespeech,non_hatespeech,"@loltothepower correction, i GOT a badass fringe. "
+693,non_hatespeech,non_hatespeech,"@procoder hmmm, sure sure  so what r u upto ? hows the day for u?"
+694,non_hatespeech,hatespeech,@ninasplayground I agree.  My kids got &quot;Who am I&quot; 4 Christmas. It's bn fun but I caught my 4 yrold cheating by looking at reflection in TV
+695,non_hatespeech,hatespeech,My hair is blue. 
+696,non_hatespeech,non_hatespeech,@wendy_bowser Thank you for the kind words!  I appreciate it.  Have a great night 
+697,non_hatespeech,non_hatespeech,stressing over this math test...uhhh....2 days till spring break!!!! 
+698,non_hatespeech,non_hatespeech,"@MintCool uh, because we really need each other, plus, you'd be my designated driver on PCH "
+699,non_hatespeech,non_hatespeech,@EMPRESSYEN WHATCHA CHUCKLIN BOUT MS.YEN 
+700,non_hatespeech,hatespeech,@ijustine the gym is an awesome place! work it out 
+701,non_hatespeech,non_hatespeech,@augustography hmmm think we need to get you climbing up hills .. you'll be really sining then 
+702,non_hatespeech,hatespeech,Just won 20$ on unc game 
+703,non_hatespeech,hatespeech,Really tired. Going to prepare for bed. G'night! 
+704,non_hatespeech,hatespeech,@keyannaaa the new story of your life will include magic fountain with me 
+705,non_hatespeech,non_hatespeech,"Im getting nervous that this trip tomorrow may be a little boring. Haha oh well, i always have my trusty ipod and my books of course  lol"
+706,non_hatespeech,hatespeech,should be going to bed... maybe i'll do that... but i'm thinking I'll put on Anastasia on my laptop as i fall asleep 
+707,non_hatespeech,non_hatespeech,@ijustine http://twitpic.com/1ff65 - I love ur top 
+708,non_hatespeech,hatespeech,"still buzzing from SIETAR... thanks to @pattidigh for pushing the old boundaries - boy, someone could make money off a twitter manual... "
+709,non_hatespeech,non_hatespeech,"@yoshigi I have terrible back and neck aches too... Get a good chair, that will help.  I am waiting for my &quot;SWOPPER&quot; to arrive. "
+710,non_hatespeech,non_hatespeech,"@juneaurock Hellz yeah, definitely downloading. Thanks "
+711,non_hatespeech,non_hatespeech,http://twitpic.com/2y2jz - we are so stinkin cute 
+712,non_hatespeech,hatespeech,@Lyndeeezy hahah not yet! but soon. very soon 
+713,non_hatespeech,non_hatespeech,"Very happy with my new blog design - nice to see recent post and popular posts listed together, and it looks great! "
+714,non_hatespeech,non_hatespeech,@michaelgrainger we have much more than that in common my friend!! 
+715,non_hatespeech,hatespeech,@ben_mayer better be. I don't wanna have to come find u and save the dog. But I would!  I'm all 4 the animals . Call off the twit police
+716,non_hatespeech,non_hatespeech,"@klaris nilagyan mo ng knorr seasoning mix ulit ung pancakes mo?! hehehe. teka, heaven and eggs ba to? "
+717,non_hatespeech,non_hatespeech,@Westneyrhindxx hello westney  what are you doing ?? x
+718,non_hatespeech,non_hatespeech,@WhereisKevinn well my night seems pretty boring in comparison to the strokes you've experienced tonight 
+719,non_hatespeech,non_hatespeech,@jephjacques I love the way you draw giraffe eyelashes. 
+720,non_hatespeech,non_hatespeech,@SwitchItNow ahhh shiner Bock in Austin YES! thanks for the Twitter @reply so I can relive too 
+721,non_hatespeech,non_hatespeech,@holytshirt Glad to read it! 
+722,non_hatespeech,hatespeech,spent the evening outside in the beautiful warm weather. finally feels like spring 
+723,non_hatespeech,non_hatespeech,pullin an all nighter wit my bffl madison 
+724,non_hatespeech,hatespeech,@AttractMode Thanks for putting on such a great event. Can't wait for the inevitable sequels! 
+725,non_hatespeech,non_hatespeech,"I don't know why I still find this hilarious after hearing it like 200 times in a row, but I doooo  ? http://blip.fm/~3x8ok"
+726,non_hatespeech,non_hatespeech,@thenub you are too 
+727,non_hatespeech,hatespeech,@jimmycarr that big oaf can play piano? 
+728,non_hatespeech,hatespeech,Bryon is my tea bitch 
+729,non_hatespeech,hatespeech,"@mattbraga Oh, they can stay. You on the other hand... "
+730,non_hatespeech,non_hatespeech,I am gonna help my mom get a twitter 
+731,non_hatespeech,non_hatespeech,@lavsmohan...... Yup!! saw the entire match....reached office late.. 
+732,non_hatespeech,hatespeech,"going to bed. My bb isn't working &amp; I'm bored.  Night all. Love me harder tomorrow, than you did today. Peace, Prayers, &amp; Blessings."
+733,non_hatespeech,hatespeech,@DEEJAY_BOOGIE ya we did trying to beat traffic but ya hope to be back soon 
+734,non_hatespeech,hatespeech,"India wins a test series in New Zealand after 41 years! If it wasnt for rain on the final day, India would have won the third test too "
+735,non_hatespeech,hatespeech,@ashvala Was driving in Old madras road on my bike!! There is no concept called parking on the side 
+736,non_hatespeech,non_hatespeech,@upstatement can I apply to be in your class too? 
+737,non_hatespeech,non_hatespeech,is reading manga  http://plurk.com/p/mzp1e
+738,non_hatespeech,non_hatespeech,@BradmanTV Thanks....it seemed the right moment. I love your show.  Your songs bring me joy.
+739,non_hatespeech,non_hatespeech,@Adri_Mane ROflmao... niqqa please. you ackin' a fool now. 
+740,non_hatespeech,non_hatespeech,@comeagainjen http://twitpic.com/2y2lx - http://www.youtube.com/watch?v=zoGfqvh2ME8 
+741,non_hatespeech,hatespeech,"@vjl also, your website seems to be down, FYI. pity, I wanted to check it out  sure you knew that though."
+742,non_hatespeech,non_hatespeech,@LindzNicole so let's make it right! 
+743,non_hatespeech,hatespeech,"@Lexi_83 We.... went professional in October 2008, we've just not update any of our websites or anything until yesterday "
+744,non_hatespeech,non_hatespeech,@rhonda_brown thanks for the tip on Sam's Club! 
+745,non_hatespeech,non_hatespeech,@KourtneyKardash yep Mornings are the Best! nighttime is chill time 
+746,non_hatespeech,non_hatespeech,@pocketfulofme yay!!! hehe TWINS 
+747,non_hatespeech,non_hatespeech,@jolilore Thank you 
+748,non_hatespeech,non_hatespeech,"&quot;City of Ember&quot; was AWESOME!!! SO have to finish the book and read the next one (ones?) now.  Time for bed possibly? Who knows, really. XD"
+749,non_hatespeech,hatespeech,"OMG, I would have died!!! actually no, I take that back...I keep an updated version on my X:drive so it's all good "
+750,non_hatespeech,non_hatespeech,@trugiaz You and i mate! 
+751,non_hatespeech,non_hatespeech, just watched the movie Wanted... it was pretty darn good.
+752,non_hatespeech,non_hatespeech,just got home from Neil's. watched Nick &amp; Nora's Playlist... pretty funny  
+753,non_hatespeech,non_hatespeech,"@theexclamation ah yes, twitter seems to be the perfect venue for whining and wasting time.  now that's my idea of fun "
+754,non_hatespeech,hatespeech,@donniewahlberg hell yeah! there's the effin man! 
+755,non_hatespeech,hatespeech,@roshnimo Dont be lazy............try a few out.... tools are to make life easy for lazy people 
+756,non_hatespeech,non_hatespeech,"@aiduong Oh goodness, I didn't know you could message friends on here! Hello Ai "
+757,non_hatespeech,non_hatespeech,Thinks everyone needs to go buy Tina Parol's song Who's Got Your Money on iTunes ... NOW! 
+758,non_hatespeech,non_hatespeech,can't wait for vegas 
+759,non_hatespeech,non_hatespeech,@theDebbyRyan Hey Debby 
+760,non_hatespeech,hatespeech,One sixty six in bowling. Holy shit lol 
+761,non_hatespeech,hatespeech,"dear dbq, you were a pain in the asssss. i'm glad i'm DONE with you! "
+762,non_hatespeech,hatespeech,and now off to bed after an amazing night chatting with a pretty amazing guy  ( you know who you are)
+763,non_hatespeech,non_hatespeech,"@lhawthorn What a coincidence! I was just stalking your Twitter feed and the GSoC news. ;) I'm doing great, thanks. How about you? "
+764,non_hatespeech,hatespeech,"has discovered that she loves easter crafts, eggs, hot cross buns... feel like watching the prince of egypt to aid my easter meditations "
+765,non_hatespeech,hatespeech,"Didn't get my nap before, thinking I really need one now. Be back later, twitterpeeps. "
+766,non_hatespeech,hatespeech,Trying to figure out a way to pay it forward 
+767,non_hatespeech,non_hatespeech,oh oh oh!!! gonna go buy Twilight on DVD today  I have to extend my overdraft for the 2nd time in as many weeks so I may aswell!!
+768,non_hatespeech,non_hatespeech,my very first twitter  awww
+769,non_hatespeech,non_hatespeech,@SimonBotes glad you like 
+770,non_hatespeech,hatespeech,"@lightblue_82 woo, you won't regret it. "
+771,non_hatespeech,non_hatespeech,@theaptour thanks so much 
+772,non_hatespeech,non_hatespeech, Please?: http://eluts.com/frontstore/Item/item_zoom.asp?item_num=3418&amp;catalog_num=3&amp;mart_id=lutsdoll&amp;level=yes&amp;mother_catalog_num=554
+773,non_hatespeech,hatespeech,@SJS86 haha i saw that one the other day. sad. i'm entirely too addicted to that site now. endless laughs 
+774,non_hatespeech,hatespeech,@lolly2420 this is nuts! thanks  I am dying over heah!
+775,non_hatespeech,non_hatespeech,"@markhoppus hey mark, i want to know if the song &quot;Life's So Boring&quot; is really blink 182 , please tell me  doubt been on my head for years"
+776,non_hatespeech,hatespeech,"@Kelly_N_Va by Jordan, I think he's got it!  "
+777,non_hatespeech,non_hatespeech,"up and running, London calling "
+778,non_hatespeech,LGBT_non_hatespeech,"What A Day  I Just Loved It. Sun, Food And My Girls  Cannot Be Beaten. Eyyy! I Bused It Home Tooo Hahaa. Have An Ace Time Darl.  xxxx"
+779,non_hatespeech,non_hatespeech,just got home from school (: meant to be getting my hair cut .. but i cbf. lol dancing soon 
+780,non_hatespeech,non_hatespeech,"Sleeeeeeeeeep, then an interview tomorrow! Wish me luck "
+781,non_hatespeech,hatespeech,Awwh babs... you look so sad underneith that shop entrance of &quot;Yesterday's Musik&quot;  O-: I like the look of the new transformer movie 
+782,non_hatespeech,non_hatespeech,@lauredhel I just friended you on LJ 
+783,non_hatespeech,non_hatespeech,eating ice cream to reduce the heat 
+784,non_hatespeech,hatespeech,wow san diego is so beautiful. even more so now that we won  but whats a good game without a good fight(;
+785,non_hatespeech,non_hatespeech,@epistemographer @digitalhumanist Doing a disciplinary PhD with the support/structure of a New Media program like that sounds heavenly 
+786,non_hatespeech,non_hatespeech,"must sleep, big day tomorrow. two tests AND class registration for next sem. ahh! goodnight, twitterers "
+787,non_hatespeech,hatespeech,"@claire_brewer I've seen one of those aisles in Borders in Oxford. They're... well, tragic "
+788,non_hatespeech,non_hatespeech,@thornbek Erin Esurance is so hot. Carry on 
+789,non_hatespeech,hatespeech,@Boobookittifukk not there yet. And i beleive so  red carpet sighting i hope.
+790,non_hatespeech,non_hatespeech,the cars in Fast and Furious get me excited 
+791,non_hatespeech,non_hatespeech,@comeagainjen Jennifer 
+792,non_hatespeech,non_hatespeech,@betzitall Wall-E is a great battle for stress.   Yay for staying up all night and doing homework together!
+793,non_hatespeech,non_hatespeech,"It's been a while since i have watched the Cosby Show, i forgot how funny it was  BUT CAN'T SLEEP THOUGH grrrrr"
+794,non_hatespeech,hatespeech,"@landrew Hehe, thanks   Was going for the incendiary headline this time "
+795,non_hatespeech,non_hatespeech,@honeytech Happy Morning! 
+796,non_hatespeech,non_hatespeech,"@SashaKane Um, my kids get up at 5am &amp; need their breakfasts cooked, you ready? "
+797,non_hatespeech,non_hatespeech,@saad_83 I wasn't late  I was right on time
+798,non_hatespeech,non_hatespeech,@myk14 Thanks buddy *high fives* hehe 
+799,non_hatespeech,non_hatespeech,@sytycda Could not agree more!The unison&amp; committment was incredible.Considering the pressure they r under made it all the more amazing 
+800,non_hatespeech,hatespeech,"@cityrat59 lol! you counted 15 times! Yeah, it was a drag today...wasn't sure if my tweets were going out. seems to behave now though "
+801,non_hatespeech,non_hatespeech,@comeagainjen http://twitpic.com/2y2lx - and you are cooler than her she just wants the babiiesss O_O HAHAHAHA 
+802,non_hatespeech,non_hatespeech,@reesh heyyyyyy want to hook it up!! lol 
+803,non_hatespeech,hatespeech,Saddle Ranch Comedy night. Then back to the boy's house 
+804,non_hatespeech,non_hatespeech,Today I performed for the first and last time at the Grebel talent show. 4 exams left until undergrad is over 
+805,non_hatespeech,non_hatespeech,@xShorty4Lifex white!! 
+806,non_hatespeech,non_hatespeech,"@thesouthernstar haha... sarapan aja belum kok, udah disamperin sama client di rumah...  "
+807,non_hatespeech,non_hatespeech,@JonathanRKnight  i do embrace the simple life.  simple things like a new kids reunion makes me an extremely happy girl 
+808,non_hatespeech,non_hatespeech,"@lapcat Need to send 'em to my accountant tomorrow. Oddly, I wasn't even referring to my taxes. Those are supporting evidence, though. "
+809,non_hatespeech,non_hatespeech,"@mmcallen Sigh, wish I could have a GMIC meeting here in San Diego! Spoke to Johanna already, she said it was great... "
+810,non_hatespeech,non_hatespeech,had a wonderful Portland evening! Thanks Carrie 
+811,non_hatespeech,non_hatespeech,6:37 in the morning and haven't been sleep   YAY!
+812,non_hatespeech,hatespeech,Headed off to Wal*Mart for more boxes. Uber excited 
+813,non_hatespeech,hatespeech,@axisportals scowls are a lot more temporary than adulthood 
+814,non_hatespeech,non_hatespeech,I'm melting. *sighs* Serendipity is such a sweet sweet movie. I love it. 
+815,non_hatespeech,non_hatespeech,@JonathanRKnight wake up with ah Jon tweet. The Best start for my day  thx Jon love You
+816,non_hatespeech,non_hatespeech,Got an inspiration -&gt; dyeing my hair! 
+817,non_hatespeech,non_hatespeech,just  created this account...looking around 
+818,non_hatespeech,non_hatespeech,@amyg0716 I'm gunnna do both of those things 
+819,non_hatespeech,non_hatespeech,"http://twitpic.com/2y2tq - So far, it is interesting. "
 820,-,-
 821,-,-
 822,-,-
@@ -9928,21 +9928,21 @@
 9927,-,-
 9928,-,-
 9929,-,-
-9930,non_hatespeech,hatespeech
-9931,non_hatespeech,hatespeech
-9932,non_hatespeech,hatespeech
-9933,non_hatespeech,hatespeech
-9934,non_hatespeech,hatespeech
-9935,non_hatespeech,hatespeech
-9936,non_hatespeech,non_hatespeech
-9937,non_hatespeech,hatespeech
-9938,non_hatespeech,hatespeech
-9939,non_hatespeech,hatespeech
-9940,non_hatespeech,hatespeech
-9941,non_hatespeech,hatespeech
-9942,non_hatespeech,hatespeech
-9943,non_hatespeech,hatespeech
-9944,non_hatespeech,hatespeech
+9930,-,-
+9931,-,-
+9932,-,-
+9933,-,-
+9934,-,-
+9935,-,-
+9936,-,-
+9937,-,-
+9938,-,-
+9939,-,-
+9940,-,-
+9941,-,-
+9942,-,-
+9943,-,-
+9944,-,-
 9945,-,-
 9946,-,-
 9947,-,-

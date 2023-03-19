@@ -48,7 +48,7 @@ class TestData:
         testData = self.getTestData()
         self.create_csv_results(testData)
 
-    def addResults(self, targets, results, indexes):
+    def addResults(self, targets, results, texts, indexes):
         results_name = self.get_path('Results.csv')
         csv_file = open(results_name, 'r+')
         reader = csv.reader(csv_file)
@@ -58,10 +58,11 @@ class TestData:
             if len(row) > 0:
                 if int(row[0]) in indexes:
                     i = indexes.index(int(row[0]))
-                    newRow = [row[0], targets[i], results[i]]
+                    newRow = [row[0], targets[i], results[i], texts[i]]
                     rows[count] = newRow
                     targets.pop(i)
                     results.pop(i)
+                    texts.pop(i)
                     indexes.pop(i)
                     if len(indexes) <= 0:
                         break

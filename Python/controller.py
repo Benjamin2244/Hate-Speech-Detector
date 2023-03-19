@@ -67,7 +67,10 @@ class Controller:
     def calcTestResults(self, num):
         targets = []
         results = []
+        texts = []
         indexes = []
+        hatespeech_count = 0
+        non_hatespeech_count = 0
         testData = self.testData.getTestData()
 
         totalCount = 0
@@ -84,6 +87,109 @@ class Controller:
         max = totalCount + num
         for data in testData:
             if count >= min and count < max:
+                if data[1] == 'LGBT_hatespeech':
+                    if hatespeech_count < num / 2:
+                        hatespeech_count += 1
+                    elif non_hatespeech_count >= num / 2:
+                        hatespeech_count += 1
+                    else:
+                        continue
+                elif data[1] == 'non_hatespeech':
+                    if non_hatespeech_count < num / 2:
+                        non_hatespeech_count += 1
+                    elif hatespeech_count >= num / 2:
+                        non_hatespeech_count += 1
+                    else:
+                        continue
+                else:
+                    continue
+                self.newText(data[0])
+                result = self.getTestResult()
+                targets.append(data[1])
+                results.append(result)
+                indexes.append(count)
+                texts.append(self.text)
+                progress += 1
+                if progress < 250:
+                    if progress % 10 == 0:
+                        print(progress)
+                else:
+                    if progress % 50 == 0:
+                        print(progress)
+            count += 1
+        if len(targets) > 0:
+            self.testData.addResults(targets, results, texts, indexes)
+
+    # def calcTestResults(self, num):
+    #     targets = []
+    #     results = []
+    #     indexes = []
+    #     testData = self.testData.getTestData()
+    #
+    #     totalCount = 0
+    #     testResults = self.testData.getResults()
+    #     for result in testResults:
+    #         if len(result) > 0:
+    #             if result[1] == '-' or result[2] == '-':
+    #                 break
+    #             totalCount += 1
+    #     print(totalCount)
+    #     count = 0
+    #     progress = 0
+    #     min = totalCount
+    #     max = totalCount + num
+    #     for data in testData:
+    #         if count >= min and count < max:
+    #             self.newText(data[0])
+    #             result = self.getTestResult()
+    #             targets.append(data[1])
+    #             results.append(result)
+    #             indexes.append(count)
+    #             progress += 1
+    #             if progress < 250:
+    #                 if progress % 10 == 0:
+    #                     print(progress)
+    #             else:
+    #                 if progress % 50 == 0:
+    #                     print(progress)
+    #         count += 1
+    #     if len(targets) > 0:
+    #         self.testData.addResults(targets, results, indexes)
+
+    def calcNonHateSpeechResults(self, num):
+        targets = []
+        results = []
+        indexes = []
+        hatespeech_count = 0
+        non_hatespeech_count = 0
+        testData = self.testData.getTestData()
+
+        totalCount = 0
+        testResults = self.testData.getResults()
+        for result in testResults:
+            if len(result) > 0:
+                if result[1] == '-' or result[2] == '-':
+                    break
+                totalCount += 1
+        print(totalCount)
+        count = 0
+        progress = 0
+        min = totalCount
+        max = totalCount + num
+        for data in testData:
+            if count >= min and count < max:
+                if data[1] == 'LGBT_hatespeech':
+                    if hatespeech_count < num/2:
+                        hatespeech_count += 1
+                    elif non_hatespeech_count >= num/2:
+                        hatespeech_count += 1
+                elif data[1] == 'non_hatespeech':
+                    if non_hatespeech_count < num/2:
+                        non_hatespeech_count += 1
+                    elif hatespeech_count >= num/2:
+                        non_hatespeech_count += 1
+                else:
+                    continue
                 self.newText(data[0])
                 result = self.getTestResult()
                 targets.append(data[1])
@@ -100,48 +206,12 @@ class Controller:
         if len(targets) > 0:
             self.testData.addResults(targets, results, indexes)
 
-    def calcNonHateSpeechResults(self, num):
-        targets = []
-        results = []
-        indexes = []
-        testData = self.testData.getTestData()
-
-        totalCount = 0
-        testResults = self.testData.getResults()
-        for result in testResults:
-            if len(result) > 0:
-                if result[1] == '-' or result[2] == '-':
-                    break
-                totalCount += 1
-        count = 0
-        index = 0
-        progress = 0
-        min = totalCount
-        max = totalCount + num
-        for data in testData:
-            if data[1] == 'non_hatespeech':
-                if count >= min and count < max:
-                    self.newText(data[0])
-                    result = self.getTestResult()
-                    targets.append(data[1])
-                    results.append(result)
-                    indexes.append(index)
-                    progress += 1
-                    if progress < 250:
-                        if progress % 10 == 0:
-                            print(progress)
-                    else:
-                        if progress % 50 == 0:
-                            print(progress)
-                count += 1
-            index += 1
-        if len(targets) > 0:
-            self.testData.addResults(targets, results, indexes)
-
     def getCorrectLGBTTestResults(self):
-        correctCount = 0
-        semiCorrectCount = 0
-        totalCount = 0
+        correctLGBTHatespeech = 0
+        correctHatespeech = 0
+        totalHatespeech = 0
+        correctPositivespeech = 0
+        totalPositivespeech = 0
         results = self.testData.getResults()
         for result in results:
             if len(result) > 0:
@@ -149,16 +219,33 @@ class Controller:
                     continue
                 if result[1] == 'LGBT_hatespeech':
                     if result[2] == 'LGBT_hatespeech':
-                        correctCount += 1
-                        semiCorrectCount += 1
+                        correctLGBTHatespeech += 1
+                        correctHatespeech += 1
                     elif result[2] == 'hatespeech':
-                        semiCorrectCount += 1
-                    totalCount += 1
-        print('Total: ' + str(totalCount))
-        print('Correct: ' + str(correctCount))
-        print(correctCount / totalCount)
-        print('Semi Correct: ' + str(semiCorrectCount))
-        print(semiCorrectCount / totalCount)
+                        correctHatespeech += 1
+                    totalHatespeech += 1
+                if result[1] == 'non_hatespeech':
+                    if result[2] == 'non_hatespeech':
+                        correctPositivespeech += 1
+                    totalPositivespeech += 1
+        print('Total LGBTQIA+ Hatespeech Tests: ' + str(totalHatespeech))
+        print('Correct Hatespeech + LGBTQIA+: ' + str(correctLGBTHatespeech))
+        if totalHatespeech > 0:
+            print(correctLGBTHatespeech / totalHatespeech)
+        else:
+            print('0')
+        print('Correct Hatespeech: ' + str(correctHatespeech))
+        if totalHatespeech > 0:
+            print(correctHatespeech / totalHatespeech)
+        else:
+            print('0')
+        print('Total Positive Tests: ' + str(totalPositivespeech))
+        print('Correct: ' + str(correctPositivespeech))
+        if totalPositivespeech > 0:
+            print(correctPositivespeech / totalPositivespeech)
+        else:
+            print('0')
+
 
     def resetResults(self):
         self.testData.resetResults()
