@@ -85,29 +85,31 @@ class TestData:
         csv_file.close()
         return rows
 
-    def cleanSentiment140Results(self):
-        text = self.get_path('training.1600000.processed.noemoticon.csv')
-        csv_file = open(text, 'r')
-        reader = csv.reader(csv_file)
-        rows = list(reader)
-        positiveRows = []
-        for row in rows:
-            if len(row) > 0:
-                if row[0] == '4':
-                    positiveRows.append(row)
-        if len(positiveRows) > 10000:
-            positiveRows = positiveRows[:10000]
-        csv_file.close()
-        return positiveRows
+    ### Had to remove 'training.1600000.processed.noemoticon.csv' due to ot being too large for git.
+    # def cleanSentiment140Results(self):
+    #     text = self.get_path('training.1600000.processed.noemoticon.csv')
+    #     csv_file = open(text, 'r')
+    #     reader = csv.reader(csv_file)
+    #     rows = list(reader)
+    #     positiveRows = []
+    #     for row in rows:
+    #         if len(row) > 0:
+    #             if row[0] == '4':
+    #                 positiveRows.append(row)
+    #     if len(positiveRows) > 10000:
+    #         positiveRows = positiveRows[:10000]
+    #     csv_file.close()
+    #     return positiveRows
 
-    def create_clean_sentiment140(self):
-        nhs = self.get_path('not_hatespeech.csv')
-        csv_file = open(nhs, 'w')
-        csv_file.truncate(0)
-        writer = csv.writer(csv_file)
-        rows = self.cleanSentiment140Results()
-        for row in rows:
-            if len(row) > 0:
-                text = row[5]
-                writer.writerow(['', str(text)])
-        csv_file.close()
+    ### Had to remove 'training.1600000.processed.noemoticon.csv' due to ot being too large for git.
+    # def create_clean_sentiment140(self):
+    #     nhs = self.get_path('not_hatespeech.csv')
+    #     csv_file = open(nhs, 'w')
+    #     csv_file.truncate(0)
+    #     writer = csv.writer(csv_file)
+    #     rows = self.cleanSentiment140Results()
+    #     for row in rows:
+    #         if len(row) > 0:
+    #             text = row[5]
+    #             writer.writerow(['', str(text)])
+    #     csv_file.close()
