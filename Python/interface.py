@@ -7,18 +7,6 @@ class Interface:
     def __init__(self):
         self.controller = Controller()
         self.resultsManager = ResultsManager(self.controller)
-        list_text = [
-            '@bellathorne If I see a picture on my iPhone that says Bella follows you will a big smile on my lip :)',
-            'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night',
-            'I came home from practice and my mommy brought me Chipotle :-) :-) :-) :-) she so gr8',
-            'Your eyes is colorfull like #WarnaWarniGalaxy, that is I falling in love with you :) :) cc. @Samsung_ID',
-            'Chale :( jodido iOS 7 en México #iOS7 #ios7mexico #fail #iphone4mexico',
-            'iPhone of Samsung - http://t co/501s9dBS3m',
-            'Pregnancy : Pregnancy week to weekCategory: Released: Price: 0 http://t co/KITPmwmbM9 - iPhone App'
-            ]
-
-        # list_text = [' If I see a picture on my iPhone that says Bella follows you will a big smile on my lip :)',
-        #              'iPhone batteries are actually so fucking shitty Been without a BI phone all day &amp; night']
 
     def activateHateSpeechDetection(self):
         self.controller.isHateSpeechDetector = True
@@ -35,8 +23,8 @@ class Interface:
     def checkText(self, text):
         return self.controller.checkText(text)
 
-    def checkList(self, list):
-        return self.controller.checkList(list)
+    def checkTexts(self, texts):
+        return self.controller.checkList(texts)
 
     def getTestResults(self):
         print('Correct LGBT Test Results: ')
@@ -48,12 +36,23 @@ class Interface:
     def resetTestResults(self):
         self.resultsManager.resetResults()
 
-intereface = Interface()
-intereface.resetTestResults()
-intereface.calcTestResults(10)
-# intereface.calcTestResults(100)
-# intereface.calcTestResults(100)
-# intereface.calcTestResults(100)
-# intereface.calcTestResults(100)
-intereface.getTestResults()
-# intereface.controller.testData.create_clean_sentiment140()
+
+# Examples on how to use the program.
+
+interface = Interface()
+
+# print(interface.checkText('This is a example of text.'))
+# print(interface.checkTexts(['This is an example', 'of multiple texts', 'being tested at once.']))
+
+# interface.resetTestResults()
+# interface.calcTestResults(20)
+# interface.getTestResults()
+
+
+# interface.resetTestResults()
+# interface.calcTestResults(100)
+# interface.calcTestResults(100)
+# interface.calcTestResults(100)
+# interface.calcTestResults(100)
+# interface.calcTestResults(100)
+# interface.getTestResults()

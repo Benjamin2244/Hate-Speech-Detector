@@ -1,6 +1,7 @@
 import os
 import csv
 
+
 class TestData:
     def __init__(self):
         parent_dir = os.path.dirname(os.path.abspath(__file__))
@@ -17,14 +18,14 @@ class TestData:
         csv_file.truncate(0)
         writer = csv.writer(csv_file)
         counter = 0
-        for row in allData:
+        for _ in allData:
             new_row = [str(counter), '-', '-']
             writer.writerow(new_row)
             counter += 1
         csv_file.close()
 
     # Returns the text.
-    def get_text(self, file_name, type):
+    def get_text(self, file_name, file_type):
         text = self.get_path(file_name)
         csv_file = open(text, 'r')
         reader = csv.reader(csv_file)
@@ -32,16 +33,18 @@ class TestData:
         testData = []
         for row in rows:
             if len(row) > 0:
-                testData.append((row[1], type))
+                testData.append((row[1], file_type))
         csv_file.close()
         return testData
 
     def getTestData(self):
         testData = []
-        LGBT_hatespeech_test_data = self.get_text('reddit_comments_orientation_lgbtq_processed.csv', 'LGBT_hatespeech')
-        not_hatespeech_test_data = self.get_text('not_hatespeech.csv', 'non_hatespeech')
-        testData += LGBT_hatespeech_test_data
-        testData += not_hatespeech_test_data
+        LGBT_hate_speech_test_data = self.get_text(
+            'reddit_comments_orientation_lgbtq_processed.csv', 'LGBT_hate_speech')
+        not_hate_speech_test_data = self.get_text(
+            'not_hate_speech.csv', 'non_hate_speech')
+        testData += LGBT_hate_speech_test_data
+        testData += not_hate_speech_test_data
         return testData
 
     def resetResults(self):
@@ -85,7 +88,7 @@ class TestData:
         csv_file.close()
         return rows
 
-    ### Had to remove 'training.1600000.processed.noemoticon.csv' due to ot being too large for git.
+    # Had to remove 'training.1600000.processed.noemoticon.csv' due to ot being too large for git.
     # def cleanSentiment140Results(self):
     #     text = self.get_path('training.1600000.processed.noemoticon.csv')
     #     csv_file = open(text, 'r')
@@ -101,9 +104,9 @@ class TestData:
     #     csv_file.close()
     #     return positiveRows
 
-    ### Had to remove 'training.1600000.processed.noemoticon.csv' due to ot being too large for git.
+    # Had to remove 'training.1600000.processed.noemoticon.csv' due to ot being too large for git.
     # def create_clean_sentiment140(self):
-    #     nhs = self.get_path('not_hatespeech.csv')
+    #     nhs = self.get_path('not_hate_speech.csv')
     #     csv_file = open(nhs, 'w')
     #     csv_file.truncate(0)
     #     writer = csv.writer(csv_file)

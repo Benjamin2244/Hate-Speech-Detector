@@ -1,6 +1,7 @@
 import os
 import csv
 
+
 class LGBTQIACSVParser:
     def __init__(self):
         parent_dir = os.path.dirname(os.path.abspath(__file__))
@@ -23,5 +24,3 @@ class LGBTQIACSVParser:
                 return True
         csv_file.close()
         return False
-
-

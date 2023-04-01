@@ -1,7 +1,8 @@
 from TextFileParser import TextFileParser
 from CSVParser import CSVParser
 
-class Initialiser:
+
+class Initializer:
 
     def __init__(self):
         self.txt_parser = TextFileParser()

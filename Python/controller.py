@@ -44,8 +44,8 @@ class Controller:
             return True
         return False
 
-    def checkList(self, list):
+    def checkList(self, texts):
         results = []
-        for text in list:
+        for text in texts:
             results.append(self.checkText(text))
         return results

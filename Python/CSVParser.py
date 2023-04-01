@@ -1,6 +1,7 @@
 import os
 import csv
 
+
 class CSVParser:
     def __init__(self):
         parent_dir = os.path.dirname(os.path.abspath(__file__))
@@ -32,5 +33,3 @@ class CSVParser:
                 values.append(row[0])
         csv_file.close()
         return values
-
-

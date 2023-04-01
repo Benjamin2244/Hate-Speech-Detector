@@ -1,5 +1,5 @@
-from controller import Controller
 from Python.TestData import TestData
+
 
 class ResultsManager:
     def __init__(self, controller):
@@ -10,21 +10,21 @@ class ResultsManager:
         isHateSpeechBool = self.controller.isHateSpeech()
         isLGBTQIASpeechBool = self.controller.isLGBTQIASpeech()
         if isHateSpeechBool and isLGBTQIASpeechBool:
-            return 'LGBT_hatespeech'
+            return 'LGBT_hate_speech'
         elif isHateSpeechBool:
-            return 'hatespeech'
+            return 'hate_speech'
         elif isLGBTQIASpeechBool:
-            return 'LGBT_non_hatespeech'
+            return 'LGBT_non_hate_speech'
         else:
-            return 'non_hatespeech'
+            return 'non_hate_speech'
 
     def calcTestResults(self, num):
         targets = []
         results = []
         texts = []
         indexes = []
-        hatespeech_count = 0
-        non_hatespeech_count = 0
+        hate_speech_count = 0
+        non_hate_speech_count = 0
         testData = self.testData.getTestData()
 
         totalCount = 0
@@ -37,22 +37,22 @@ class ResultsManager:
         print(totalCount)
         count = 0
         progress = 0
-        min = totalCount
-        max = totalCount + num
+        min_index = totalCount
+        max_index = totalCount + num
         for data in testData:
-            if count >= min and count < max:
-                if data[1] == 'LGBT_hatespeech':
-                    if hatespeech_count < num / 2:
-                        hatespeech_count += 1
-                    elif non_hatespeech_count >= num / 2:
-                        hatespeech_count += 1
+            if min_index <= count < max_index:
+                if data[1] == 'LGBT_hate_speech':
+                    if hate_speech_count < num / 2:
+                        hate_speech_count += 1
+                    elif non_hate_speech_count >= num / 2:
+                        hate_speech_count += 1
                     else:
                         continue
-                elif data[1] == 'non_hatespeech':
-                    if non_hatespeech_count < num / 2:
-                        non_hatespeech_count += 1
-                    elif hatespeech_count >= num / 2:
-                        non_hatespeech_count += 1
+                elif data[1] == 'non_hate_speech':
+                    if non_hate_speech_count < num / 2:
+                        non_hate_speech_count += 1
+                    elif hate_speech_count >= num / 2:
+                        non_hate_speech_count += 1
                     else:
                         continue
                 else:
@@ -75,55 +75,54 @@ class ResultsManager:
             self.testData.addResults(targets, results, texts, indexes)
 
     def getCorrectLGBTTestResults(self):
-        correctLGBTHatespeech = 0
-        correctHatespeech = 0
+        correctLGBTHateSpeech = 0
+        correctHateSpeech = 0
         correctLGBT = 0
-        totalHatespeech = 0
-        correctPositivespeech = 0
-        totalPositivespeech = 0
+        totalHateSpeech = 0
+        correctPositiveSpeech = 0
+        totalPositiveSpeech = 0
         results = self.testData.getResults()
         for result in results:
             if len(result) > 0:
                 if result[1] == '-' or result[2] == '-':
                     continue
-                if result[1] == 'LGBT_hatespeech':
-                    if result[2] == 'LGBT_hatespeech':
-                        correctLGBTHatespeech += 1
+                if result[1] == 'LGBT_hate_speech':
+                    if result[2] == 'LGBT_hate_speech':
+                        correctLGBTHateSpeech += 1
                         correctLGBT += 1
-                        correctHatespeech += 1
-                    elif result[2] == 'hatespeech':
-                        correctHatespeech += 1
-                    elif result[2] == 'LGBT_non_hatespeech':
+                        correctHateSpeech += 1
+                    elif result[2] == 'hate_speech':
+                        correctHateSpeech += 1
+                    elif result[2] == 'LGBT_non_hate_speech':
                         correctLGBT += 1
-                    totalHatespeech += 1
-                if result[1] == 'non_hatespeech':
-                    if result[2] == 'non_hatespeech':
-                        correctPositivespeech += 1
-                    totalPositivespeech += 1
-        print('Total LGBTQIA+ Hatespeech Tests: ' + str(totalHatespeech))
+                    totalHateSpeech += 1
+                if result[1] == 'non_hate_speech':
+                    if result[2] == 'non_hate_speech':
+                        correctPositiveSpeech += 1
+                    totalPositiveSpeech += 1
+        print('Total LGBTQIA+ Hate Speech Tests: ' + str(totalHateSpeech))
 
-        correctLGBTHatespeechRate = 0
-        if totalHatespeech > 0:
-            correctLGBTHatespeechRate = (correctLGBTHatespeech / totalHatespeech) * 100
-        print('Correct Hatespeech + LGBTQIA+: ' + str(correctLGBTHatespeech) + ', ' + str(correctLGBTHatespeechRate) + ' %')
+        correctLGBTHateSpeechRate = 0
+        if totalHateSpeech > 0:
+            correctLGBTHateSpeechRate = (correctLGBTHateSpeech / totalHateSpeech) * 100
+        print('Correct Hate Speech + LGBTQIA+: ' + str(correctLGBTHateSpeech) + ', ' + str(
+            correctLGBTHateSpeechRate) + ' %')
 
-        correctHatespeechRate = 0
-        if totalHatespeech > 0:
-            correctHatespeechRate = (correctHatespeech / totalHatespeech) * 100
-        print('Correct Hatespeech: ' + str(correctHatespeech) + ', ' + str(correctHatespeechRate) + ' %')
+        correctHateSpeechRate = 0
+        if totalHateSpeech > 0:
+            correctHateSpeechRate = (correctHateSpeech / totalHateSpeech) * 100
+        print('Correct Hate Speech: ' + str(correctHateSpeech) + ', ' + str(correctHateSpeechRate) + ' %')
 
         correctLGBTRate = 0
-        if totalHatespeech > 0:
-            correctLGBTRate = (correctLGBT / totalHatespeech) * 100
+        if totalHateSpeech > 0:
+            correctLGBTRate = (correctLGBT / totalHateSpeech) * 100
         print('Correct LGBTQIA+ detection: ' + str(correctLGBT) + ', ' + str(correctLGBTRate) + ' %')
 
-        print('Total Positive Tests: ' + str(totalPositivespeech))
-        correctPositivespeechRate = 0
-        if totalPositivespeech > 0:
-            correctPositivespeechRate = (correctPositivespeech / totalPositivespeech) * 100
-        print('Correct: ' + str(correctPositivespeech) + ', ' + str(correctPositivespeechRate) + ' %')
+        print('Total Positive Tests: ' + str(totalPositiveSpeech))
+        correctPositiveSpeechRate = 0
+        if totalPositiveSpeech > 0:
+            correctPositiveSpeechRate = (correctPositiveSpeech / totalPositiveSpeech) * 100
+        print('Correct: ' + str(correctPositiveSpeech) + ', ' + str(correctPositiveSpeechRate) + ' %')
 
     def resetResults(self):
         self.testData.resetResults()
-
-

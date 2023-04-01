@@ -4,6 +4,7 @@ from nltk.corpus import wordnet
 import nltk
 import requests
 
+
 class HateSpeechDetector:
 
     def __init__(self):
@@ -37,7 +38,7 @@ class HateSpeechDetector:
             try:
                 response = requests.get(url)
                 status_code = response.status_code
-            except(Exception):
+            except Exception:
                 continue
             if status_code == 200:
                 self.HAS_INTERNET = True
@@ -87,7 +88,8 @@ class HateSpeechDetector:
         for word in text:
             values = self.csv_parser.get_values(word)
             average = self.getAverageValue(values)
-            if average == 0 and len(values) != 0: # Improve performance by only getting the backup values for words that had a value but they were too neutral.
+            if average == 0 and len(values) != 0:  # Improve performance by only getting the backup values
+                # for words that had a value, but they were too neutral.
                 average = self.get_backup_average(word)
                 if average == 0:
                     continue

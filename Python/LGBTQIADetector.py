@@ -1,8 +1,5 @@
-from InputParser import InputParser
 from LGBTQIA_CSV_Parser import LGBTQIACSVParser
-from nltk.corpus import wordnet
-import nltk
-import requests
+
 
 class LGBTQIADetector:
 
