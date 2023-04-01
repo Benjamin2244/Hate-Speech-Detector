@@ -1,10 +1,12 @@
 from controller import Controller
+from ResultsManager import ResultsManager
 
 
 class Interface:
 
     def __init__(self):
         self.controller = Controller()
+        self.resultsManager = ResultsManager(self.controller)
         list_text = [
             '@bellathorne If I see a picture on my iPhone that says Bella follows you will a big smile on my lip :)',
             'iPhone batteries are actually so fucking shitty Been without a phone all day &amp; night',
@@ -38,20 +40,20 @@ class Interface:
 
     def getTestResults(self):
         print('Correct LGBT Test Results: ')
-        self.controller.getCorrectLGBTTestResults()
+        self.resultsManager.getCorrectLGBTTestResults()
 
     def calcTestResults(self, num):
-        self.controller.calcTestResults(num)
+        self.resultsManager.calcTestResults(num)
 
     def resetTestResults(self):
-        self.controller.resetResults()
+        self.resultsManager.resetResults()
 
 intereface = Interface()
-# intereface.resetTestResults()
-intereface.calcTestResults(100)
-intereface.calcTestResults(100)
-intereface.calcTestResults(100)
-intereface.calcTestResults(100)
-intereface.calcTestResults(100)
+intereface.resetTestResults()
+intereface.calcTestResults(10)
+# intereface.calcTestResults(100)
+# intereface.calcTestResults(100)
+# intereface.calcTestResults(100)
+# intereface.calcTestResults(100)
 intereface.getTestResults()
 # intereface.controller.testData.create_clean_sentiment140()
