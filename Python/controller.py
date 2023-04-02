@@ -1,4 +1,4 @@
-from InputParser import InputParser
+from TextParser import TextParser
 from TextFileParser import TextFileParser
 from CSVParser import CSVParser
 from Initializer import Initializer
@@ -10,7 +10,7 @@ from Python.ResultData import ResultData
 
 class Controller:
     def __init__(self):
-        self.input_parser = InputParser()
+        self.input_parser = TextParser()
         self.txt_parser = TextFileParser()
         self.csv_parser = CSVParser()
         self.initializer = Initializer()

@@ -1,4 +1,4 @@
-from InputParser import InputParser
+from TextParser import TextParser
 from CSVParser import CSVParser
 from nltk.corpus import wordnet
 import nltk
@@ -8,7 +8,7 @@ import requests
 class HateSpeechDetector:
 
     def __init__(self):
-        self.input_parser = InputParser()
+        self.input_parser = TextParser()
         self.csv_parser = CSVParser()
         self.DEFAULT_THRESHOLD = 0.3
         self.THRESHOLD = self.DEFAULT_THRESHOLD

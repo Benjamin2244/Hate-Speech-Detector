@@ -1,4 +1,4 @@
-class InputParser:
+class TextParser:
     def __init__(self):
         self.POSITIVE_EMOJIS = [':)', ':-)', ': )', ':D', '=)', ':-D', 'o:)-', '8-)', ':$']
         self.NEGATIVE_EMOJIS = [':(', ':-(', ': (', ":'(", ':o', '>(', '(@)', 'X|']

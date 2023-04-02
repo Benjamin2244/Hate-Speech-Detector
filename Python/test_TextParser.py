@@ -1,9 +1,9 @@
 import unittest
-from InputParser import InputParser
+from TextParser import TextParser
 
-class TestInputParser(unittest.TestCase):
+class TestTextParser(unittest.TestCase):
     def setUp(self):
-        self.parser = InputParser()
+        self.parser = TextParser()
 
     def test_get_word(self):
         word = self.parser.get_word('This is test text', 8, 12)

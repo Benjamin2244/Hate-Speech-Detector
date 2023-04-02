@@ -102,7 +102,7 @@ interface = Interface()
 # interface.getTestResults()
 
 
-interface.reset_SWN_WORDS()
+# interface.reset_SWN_WORDS()
 
 # interface.resetTestResults()
 # interface.calcTestResults(100)
@@ -110,4 +110,4 @@ interface.reset_SWN_WORDS()
 # interface.calcTestResults(200)
 # interface.calcTestResults(200)
 # interface.calcTestResults(200)
-# interface.getTestResults()
+interface.getTestResults()
