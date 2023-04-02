@@ -19,7 +19,7 @@ class TestInputParser(unittest.TestCase):
         self.assertEqual(text, 'uppercase')
 
     def test_get_clean_text(self):
-        clean_text = self.parser.get_clean_text('ThiS_ iS% 1DirTY£')
+        clean_text = self.parser.get_clean_text('ThiS_ iS%  1DirTY£')
         self.assertEqual(clean_text, ['this', 'is', 'dirty'])
 
     def test_getEmojis(self):

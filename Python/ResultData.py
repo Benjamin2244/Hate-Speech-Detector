@@ -2,7 +2,7 @@ import os
 import csv
 
 
-class TestData:
+class ResultData:
     def __init__(self):
         parent_dir = os.path.dirname(os.path.abspath(__file__))
         self.project_dir = os.path.dirname(parent_dir)

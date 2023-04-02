@@ -1,10 +1,10 @@
-from Python.TestData import TestData
+from Python.ResultData import ResultData
 
 
 class ResultsManager:
     def __init__(self, controller):
         self.controller = controller
-        self.testData = TestData()
+        self.testData = ResultData()
 
     def getTestResult(self):
         isHateSpeechBool = self.controller.isHateSpeech()

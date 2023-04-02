@@ -5,7 +5,7 @@ from Initializer import Initializer
 from HateSpeechDetector import HateSpeechDetector
 from LGBTQIADetector import LGBTQIADetector
 from LGBTQIA_CSV_Parser import LGBTQIACSVParser
-from Python.TestData import TestData
+from Python.ResultData import ResultData
 
 
 class Controller:
@@ -17,7 +17,7 @@ class Controller:
         self.lgbtqia_parser = LGBTQIACSVParser()
         self.hate_speech_detector = HateSpeechDetector()
         self.LGBTQIA_detector = LGBTQIADetector()
-        self.testData = TestData()
+        self.testData = ResultData()
         self.text = ''
         self.cleanText = []
         self.emojis = []

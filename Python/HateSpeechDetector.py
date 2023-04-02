@@ -122,7 +122,6 @@ class HateSpeechDetector:
 
     def addEmojiScore(self, allValues, emojis):
         for emoji in emojis:
-            print(emojis)
             if emoji == '+':
                 allValues.append(1)
                 allValues.append(1)

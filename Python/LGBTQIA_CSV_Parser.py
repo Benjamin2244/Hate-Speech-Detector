@@ -34,6 +34,7 @@ class LGBTQIACSVParser:
         for word in rows:
             if len(word) > 0:
                 words.append(word[0])
+        csv_file.close()
         return words
 
     def getDefaultWords(self):
@@ -45,6 +46,7 @@ class LGBTQIACSVParser:
         for word in rows:
             if len(word) > 0:
                 words.append(word[0])
+        csv_file.close()
         return words
 
     def resetWords(self):
