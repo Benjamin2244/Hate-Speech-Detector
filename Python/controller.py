@@ -1,8 +1,10 @@
 from InputParser import InputParser
 from TextFileParser import TextFileParser
 from CSVParser import CSVParser
+from Initializer import Initializer
 from HateSpeechDetector import HateSpeechDetector
 from LGBTQIADetector import LGBTQIADetector
+from LGBTQIA_CSV_Parser import LGBTQIACSVParser
 from Python.TestData import TestData
 
 
@@ -11,6 +13,8 @@ class Controller:
         self.input_parser = InputParser()
         self.txt_parser = TextFileParser()
         self.csv_parser = CSVParser()
+        self.initializer = Initializer()
+        self.lgbtqia_parser = LGBTQIACSVParser()
         self.hate_speech_detector = HateSpeechDetector()
         self.LGBTQIA_detector = LGBTQIADetector()
         self.testData = TestData()
@@ -49,3 +53,46 @@ class Controller:
         for text in texts:
             results.append(self.checkText(text))
         return results
+
+    def reset_POSITIVE_SPEECH_THRESHOLD(self):
+        self.hate_speech_detector.reset_POSITIVE_SPEECH_THRESHOLD()
+
+    def reset_HATE_SPEECH_THRESHOLD(self):
+        self.hate_speech_detector.reset_HATE_SPEECH_THRESHOLD()
+
+    def change_HATE_SPEECH_THRESHOLD(self, num):
+        self.hate_speech_detector.change_HATE_SPEECH_THRESHOLD(num)
+
+    def change_POSITIVE_SPEECH_THRESHOLD(self, num):
+        self.hate_speech_detector.change_POSITIVE_SPEECH_THRESHOLD(num)
+
+    def reset_WORD_SCORE_THRESHOLD(self):
+        self.hate_speech_detector.reset_WORD_SCORE_THRESHOLD()
+
+    def change_WORD_SCORE_THRESHOLD(self, num):
+        self.hate_speech_detector.change_WORD_SCORE_THRESHOLD(num)
+
+    def get_LGBTQIA_Words(self):
+        return self.lgbtqia_parser.getWords()
+
+    def reset_LGBTQIA_Words(self):
+        self.lgbtqia_parser.resetWords()
+
+    def add_LGBTQIA_Word(self, word):
+        self.lgbtqia_parser.addWord(word)
+
+    def remove_LGBTQIA_Word(self, word):
+        self.lgbtqia_parser.removeWord(word)
+
+    def get_SWN_Words(self):
+        return self.csv_parser.getWords()
+
+    def reset_SWN_Words(self):
+        self.csv_parser.resetWords()
+
+    def add_SWN_Word(self, word, score):
+        self.csv_parser.addWord(word, score)
+
+    def remove_SWN_Word(self, word):
+        self.csv_parser.removeWord(word)
+

@@ -10,13 +10,34 @@ class HateSpeechDetector:
     def __init__(self):
         self.input_parser = InputParser()
         self.csv_parser = CSVParser()
-        self.THRESHOLD = 0.3
-        self.HATE_SPEECH_THRESHOLD = 0.1
-        self.POSITIVE_SPEECH_THRESHOLD = 0.1
+        self.DEFAULT_THRESHOLD = 0.3
+        self.THRESHOLD = self.DEFAULT_THRESHOLD
+        self.DEFAULT_HATE_SPEECH_THRESHOLD = 0.1
+        self.HATE_SPEECH_THRESHOLD = self.DEFAULT_HATE_SPEECH_THRESHOLD
+        self.DEFAULT_POSITIVE_SPEECH_THRESHOLD = 0.1
+        self.POSITIVE_SPEECH_THRESHOLD = self.DEFAULT_POSITIVE_SPEECH_THRESHOLD
         self.HAS_INTERNET = False
         self.check_for_internet_connection()
         if self.HAS_INTERNET:
             self.downloads()
+
+    def reset_HATE_SPEECH_THRESHOLD(self):
+        self.HATE_SPEECH_THRESHOLD = self.DEFAULT_HATE_SPEECH_THRESHOLD
+
+    def reset_POSITIVE_SPEECH_THRESHOLD(self):
+        self.POSITIVE_SPEECH_THRESHOLD = self.DEFAULT_POSITIVE_SPEECH_THRESHOLD
+
+    def change_HATE_SPEECH_THRESHOLD(self, num):
+        self.HATE_SPEECH_THRESHOLD = num
+
+    def change_POSITIVE_SPEECH_THRESHOLD(self, num):
+        self.POSITIVE_SPEECH_THRESHOLD = num
+
+    def reset_WORD_SCORE_THRESHOLD(self):
+        self.THRESHOLD = self.DEFAULT_THRESHOLD
+
+    def change_WORD_SCORE_THRESHOLD(self, num):
+        self.THRESHOLD = num
 
     # Downloads wordnet.
     def download_wordnet(self):

@@ -24,3 +24,50 @@ class LGBTQIACSVParser:
                 return True
         csv_file.close()
         return False
+
+    def getWords(self):
+        related = self.get_path('LGBTQIA_Terms.csv')
+        csv_file = open(related, 'r')
+        reader = csv.reader(csv_file)
+        rows = list(reader)
+        words = []
+        for word in rows:
+            if len(word) > 0:
+                words.append(word[0])
+        return words
+
+    def getDefaultWords(self):
+        related = self.get_path('Default_LGBTQIA_Terms.csv')
+        csv_file = open(related, 'r')
+        reader = csv.reader(csv_file)
+        rows = list(reader)
+        words = []
+        for word in rows:
+            if len(word) > 0:
+                words.append(word[0])
+        return words
+
+    def resetWords(self):
+        words = self.getDefaultWords()
+        self.saveWords(words)
+
+    def saveWords(self, words):
+        LGBTQIA_RELATED_WORDS = self.get_path('LGBTQIA_Terms.csv')
+        csv_file = open(LGBTQIA_RELATED_WORDS, 'w')
+        csv_file.truncate(0)
+        writer = csv.writer(csv_file)
+        for word in words:
+            new_row = word
+            writer.writerow([new_row])
+        csv_file.close()
+
+    def addWord(self, word):
+        words = self.getWords()
+        words.append(word)
+        self.saveWords(words)
+
+    def removeWord(self, word):
+        words = self.getWords()
+        while word in words:
+            words.remove(word)
+        self.saveWords(words)
