@@ -48,7 +48,7 @@ class Interface:
         return self.controller.get_LGBTQIA_Words()
 
     def reset_LGBTQIA_WORDS(self):
-        return self.controller.reset_LGBTQIA_Words()
+        self.controller.reset_LGBTQIA_Words()
 
     def add_LGBTQIA_Word(self, word):
         self.controller.add_LGBTQIA_Word(word)
@@ -63,7 +63,7 @@ class Interface:
         return self.controller.get_SWN_Words()
 
     def reset_SWN_WORDS(self):
-        return self.controller.reset_SWN_Words()
+        self.controller.reset_SWN_Words()
 
     # Give the word to add and the value for the word.
     # Values are between -1 and 1.
@@ -80,7 +80,6 @@ class Interface:
         return self.controller.checkList(texts)
 
     def getTestResults(self):
-        print('Correct LGBT Test Results: ')
         self.resultsManager.getCorrectLGBTTestResults()
 
     def calcTestResults(self, num):
@@ -102,12 +101,9 @@ interface = Interface()
 # interface.getTestResults()
 
 
-# interface.reset_SWN_WORDS()
 
+
+# print(interface.checkText('trying to figure this thing out'))
 # interface.resetTestResults()
-# interface.calcTestResults(100)
-# interface.calcTestResults(100)
-# interface.calcTestResults(200)
-# interface.calcTestResults(200)
-# interface.calcTestResults(200)
+# interface.calcTestResults(10)
 interface.getTestResults()

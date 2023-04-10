@@ -1,29 +1,22 @@
 from TextParser import TextParser
-from TextFileParser import TextFileParser
 from CSVParser import CSVParser
-from Initializer import Initializer
 from HateSpeechDetector import HateSpeechDetector
 from LGBTQIADetector import LGBTQIADetector
 from LGBTQIA_CSV_Parser import LGBTQIACSVParser
-from Python.ResultData import ResultData
 
 
 class Controller:
     def __init__(self):
         self.input_parser = TextParser()
-        self.txt_parser = TextFileParser()
         self.csv_parser = CSVParser()
-        self.initializer = Initializer()
         self.lgbtqia_parser = LGBTQIACSVParser()
         self.hate_speech_detector = HateSpeechDetector()
         self.LGBTQIA_detector = LGBTQIADetector()
-        self.testData = ResultData()
         self.text = ''
         self.cleanText = []
         self.emojis = []
         self.isHateSpeechDetector = True
         self.isLGBTQIASpeechDetector = True
-        self.testResults = []
 
     def isHateSpeech(self):
         return self.hate_speech_detector.isHateSpeech(self.cleanText, self.emojis)

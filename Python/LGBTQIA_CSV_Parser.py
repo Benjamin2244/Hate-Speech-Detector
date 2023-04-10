@@ -22,6 +22,10 @@ class LGBTQIACSVParser:
             if word in row:
                 csv_file.close()
                 return True
+            elif len(row) > 0:
+                if row[0] in word:
+                    csv_file.close()
+                    return True
         csv_file.close()
         return False
 

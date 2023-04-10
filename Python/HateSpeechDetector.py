@@ -10,11 +10,11 @@ class HateSpeechDetector:
     def __init__(self):
         self.input_parser = TextParser()
         self.csv_parser = CSVParser()
-        self.DEFAULT_THRESHOLD = 0.3
+        self.DEFAULT_THRESHOLD = 0.5
         self.THRESHOLD = self.DEFAULT_THRESHOLD
-        self.DEFAULT_HATE_SPEECH_THRESHOLD = 0.1
+        self.DEFAULT_HATE_SPEECH_THRESHOLD = 0.05
         self.HATE_SPEECH_THRESHOLD = self.DEFAULT_HATE_SPEECH_THRESHOLD
-        self.DEFAULT_POSITIVE_SPEECH_THRESHOLD = 0.1
+        self.DEFAULT_POSITIVE_SPEECH_THRESHOLD = 0.05
         self.POSITIVE_SPEECH_THRESHOLD = self.DEFAULT_POSITIVE_SPEECH_THRESHOLD
         self.HAS_INTERNET = False
         self.check_for_internet_connection()
